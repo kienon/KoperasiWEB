@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Federasi SKM</title>
+  <title>Team - Moderna Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,22 +37,24 @@
   ======================================================== -->
 </head>
 
+<body>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="./"><span>Federasi</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>Federasi</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active " href="./">Home</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="media.php">Media</a></li>
+          <li><a class="" href="index.php">Home</a></li>
+          <li><a href="./#about">About</a></li>
+          <li><a href="./#service.">Services</a></li>
+          <li><a class="active" href="media.php">Media</a></li>
           <li><a href="corporate.php">Corporate</a></li>
           <li><a href="blog.php">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -72,7 +74,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="./#contact">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
