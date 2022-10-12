@@ -1,0 +1,20 @@
+Homepage targeted alterable components:
+images slide
+about
+services
+news/blog
+
+Login System:
+user add, update, delete
+
+SEO:
+Meta Tag
+
+Soalan:
+Mau DwiBahasa?
+
+Redesign:
+Ganti Portfolio as Media page.
+
+Blog as news or blog.
+
