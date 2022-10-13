@@ -1,6 +1,6 @@
 <?php
 	//include 'db_connect.php';
-	include 'header3.php' 
+	include 'headerCorp.php' 
 ?>
 <body>
 

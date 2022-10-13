@@ -1,6 +1,6 @@
 <?php
 	//include 'db_connect.php';
-	include 'header4.php' 
+	include 'headerBlog.php' 
 ?>
 <body>
 

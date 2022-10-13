@@ -1,6 +1,6 @@
 <?php
 	//include 'db_connect.php';
-	include 'header2.php' 
+	include 'headerMedia.php' 
 ?>
 <body>
 

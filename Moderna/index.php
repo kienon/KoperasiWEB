@@ -1,7 +1,7 @@
 <?php session_start()?>
 <?php
 	//include 'db_connect.php';
-	include 'header.php' 
+	include 'headerHome.php' 
 ?>
 
 <body>
