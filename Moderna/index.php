@@ -51,6 +51,7 @@
   <main id="main">
         <!-- ======= About Section ======= -->
         <section class="about" data-aos="fade-up" id="aboutus">
+          <h2 class="text-center">About Us</h2><br>
           <div class="container">
     
             <div class="row">
@@ -84,25 +85,32 @@
           <div class="container">
     
             <div class="row counters">
-    
-              <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Clients</p>
+            
+            <div class="col-lg-2 col-6">
+              <lord-icon
+                  src="https://cdn.lordicon.com/gqzfzudq.json"
+                  trigger="hover"
+                  style="width:100px;height:100px">
+              </lord-icon>
+              </div>    
+              <div class="col-lg-4 col-6 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                <p><b>COOPERATIVE STORES</b></p>
+              </div>
+
+              <div class="col-lg-3 col-6">
+              <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/qrbokoyz.json"
+                  trigger="loop-on-hover"
+                  delay="2000"
+                  style="width:100px;height:100px">
+              </lord-icon>
               </div>
     
               <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-    
-              <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-    
-              <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+                <span data-purecounter-start="0" data-purecounter-end="52321" data-purecounter-duration="1" class="purecounter"></span>
+                <p><b>TOTAL NUMBER OF SALES</b></p>
               </div>
     
             </div>
@@ -112,6 +120,7 @@
     <!-- ======= Services Section ======= -->
     <section class="services" id="service">
       <div class="container">
+      <h2 class="text-center">Our Services</h2><br>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
@@ -153,8 +162,8 @@
 
        <!-- ======= Contact Section ======= -->
        <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">
-        
         <div class="container">
+        <h2 class="text-center">Contact Us</h2><br>
   
           <div class="row">
   
