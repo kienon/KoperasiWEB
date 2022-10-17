@@ -52,9 +52,9 @@
           <li><a class="active " href="./">Home</a></li>
           <li><a href="#aboutus">About</a></li>
           <li><a href="#service">Services</a></li>
-          <li><a href="media.php">Media</a></li>
-          <li><a href="corporate.php">Corporate</a></li>
-          <li><a href="blog.php">Blog</a></li>
+          <li><a href="/media">Media</a></li>
+          <li><a href="/corporate">Corporate</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>

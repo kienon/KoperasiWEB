@@ -44,19 +44,19 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Federasi</span></a></h1>
+        <h1 class="text-light"><a href="./"><span>Federasi</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="" href="index.php">Home</a></li>
+          <li><a class="" href="./">Home</a></li>
           <li><a href="./#about">About</a></li>
-          <li><a href="./#service.">Services</a></li>
-          <li><a href="media.php">Media</a></li>
-          <li><a class="active" href="corporate.php">Corporate</a></li>
-          <li><a href="blog.php">Blog</a></li>
+          <li><a href="./#service">Services</a></li>
+          <li><a href="/media">Media</a></li>
+          <li><a class="active" href="/corporate">Corporate</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
