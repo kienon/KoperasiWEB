@@ -50,7 +50,7 @@
 
   <main id="main">
         <!-- ======= About Section ======= -->
-        <section class="about" data-aos="fade-up" id="aboutus">
+        <section class="about" data-aos="fade-up" id="about">
           <h2 class="text-center">About Us</h2><br>
           <div class="container">
     
