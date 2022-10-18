@@ -50,29 +50,18 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="./">Home</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="/media">Media</a></li>
-          <li><a href="/corporate">Corporate</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a href="./#about">About</a></li>
+          <li><a href="./#service">Services</a></li>
+          <li><a href="./#contact">Contact Us</a></li>
+          <li class="dropdown"><a href="#"><span>Corporate</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="corprofile">Corporate Profile</a></li>
+              <li><a href="corteam">Corporate Team</a></li>
+              <li><a href="vm">Vision & Mission</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="media">Media</a></li>
+          <li><a class="active" href="blog">Blog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

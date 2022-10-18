@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+br {
+  display: block;
+  margin: 10px 0;
+}
+
+a.button{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
+  }
+  a.button:hover{
+  background-color:#4095c6;
+  color:#FFFFFF;
+  }
+  @media all and (max-width:30em){
+  a.button{
+  display:block;
+  margin:0.2em auto;
+  }
+  }
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .container {
+    width: 85%;
+  }
+}
+.container .header {
+  color: #ff002b;
+  font-size: 4em;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 5px #b1041f;
+}
+
+@media(max-width: 560px){
+  .container-flex{
+    width: 30%;
+}
+.container-flex .header {
+  font-size: 3em;
+}
+}
+
+@media (max-width: 650px) {
+  .container-flex{
+    width: 50%;
+  }
+  .container-flex .header {
+    font-size: 3em;
+  }
+}
+
+@media(max-width: 767px){
+  .container-flex{
+    width: 100%;
+}
+.container-flex .header {
+  font-size: 3em;
+}
+.instructions {
+  width: 100%;
+}
+}
+
+@media(max-width: 1200px){
+  .container-flex{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+.compcontainer {
+  width: 75%;
+  height: 13rem;
+  padding: 1rem 0;
+}
+@media (max-width: 650px) {
+  .compcontainer {
+    height: 10rem;
+  }
+}
+.compcontainer img {
+  display: flex;
+}
+
+.instructions {
+  background: #e0d8d8;
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid #DCDCDC;
+  border-radius: 0.25rem;
+}
+@media (max-width: 650px) {
+  .instructions {
+    width: 100%;
+  }
+}
+.instructions h2 {
+  font-size: 1.25em;
+  line-height: 1.3;
+  color: #e30528;
+}
+@media (max-width: 650px) {
+  .instructions h2 {
+    font-size: 1.05em;
+  }
+}
+.instructions p {
+  font-size: 1.15em;
+  line-height: 1.5;
+  color: #122125;
+}
+@media (max-width: 650px) {
+  .instructions p {
+    font-size: 1em;
+  }
+}
+.instructions .step {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 1.5rem;
+  margin: 0.5rem 0;
+}
+.instructions .step .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  align-self: center;
+}
+@media (max-width: 650px) {
+  .instructions .step .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .instructions .step p {
+    display: inline-block;
+    width: 80%;
+    line-height: 1.5;
+    padding-left: 0.5rem;}
+}
+

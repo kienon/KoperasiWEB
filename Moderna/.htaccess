@@ -1,13 +1,27 @@
 #Remove extension of URL
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
+
+#phpextension
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L]
+
+#htmlextension
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
 RewriteRule ^home index.php
+RewriteRule ^corteam corporateteam.php
+RewriteRule ^corprofile corporateprofile.php
+RewriteRule ^vm visionmision.php
 
 #error handling htaccess
-ErrorDocument 400 /errors/badrequest.html
-ErrorDocument 401 /errors/authreqd.html
-ErrorDocument 403 /errors/forbid.html
-ErrorDocument 404 /errors/notfound.html
-ErrorDocument 500 /errors/serverr.html
+ErrorDocument 400 /errors/badreq
+ErrorDocument 401 /errors/autherror
+ErrorDocument 403 /errors/forbid
+ErrorDocument 404 /errors/notfound 
+ErrorDocument 408 /errors/reqtimeout
+ErrorDocument 500 /errors/servererror 
+
+
+
