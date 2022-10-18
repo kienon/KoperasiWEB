@@ -15,13 +15,15 @@ RewriteRule ^corteam corporateteam.php
 RewriteRule ^corprofile corporateprofile.php
 RewriteRule ^vm visionmision.php
 
+
 #error handling htaccess
 ErrorDocument 400 /errors/badreq
-ErrorDocument 401 /errors/autherror
-ErrorDocument 403 /errors/forbid
+ErrorDocument 403 /errors/forbidden
 ErrorDocument 404 /errors/notfound 
 ErrorDocument 408 /errors/reqtimeout
 ErrorDocument 500 /errors/servererror 
+ErrorDocument 502 /errors/badgateway
+ErrorDocument 504 /errors/timeout
 
 
 
