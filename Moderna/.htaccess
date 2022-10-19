@@ -14,7 +14,27 @@ RewriteRule ^home index.php
 RewriteRule ^corteam corporateteam.php
 RewriteRule ^corprofile corporateprofile.php
 RewriteRule ^vm visionmision.php
+RewriteRule ^assets/?$ - [F,L]
+RewriteRule ^PHPMailer/?$ - [F,L]
+RewriteRule ^errors/?$ - [F,L]
 
+#RedirectForbidden
+RedirectMatch 403 ^/assets/css/?$
+RedirectMatch 403 ^/assets/img/?$
+RedirectMatch 403 ^/assets/vendor/?$
+RedirectMatch 403 ^/assets/js/?$
+RedirectMatch 403 ^/assets/vendor/animate.css/?$
+RedirectMatch 403 ^/assets/vendor/aos/?$
+RedirectMatch 403 ^/assets/vendor/bootstrap/?$
+RedirectMatch 403 ^/assets/vendor/bootstrap-icons/?$
+RedirectMatch 403 ^/assets/vendor/boxicons/?$
+RedirectMatch 403 ^/assets/vendor/glightbox/?$
+RedirectMatch 403 ^/assets/vendor/isotope-layout/?$
+RedirectMatch 403 ^/assets/vendor/purecounter/?$
+RedirectMatch 403 ^/assets/vendor/swiper/?$
+RedirectMatch 403 ^/assets/vendor/waypoint/?$
+RedirectMatch 403 ^/phpmailer/language/?$
+RedirectMatch 403 ^/phpmailer/src/?$
 
 #error handling htaccess
 ErrorDocument 400 /errors/badreq
