@@ -52,7 +52,7 @@
       <nav id="navbar" class="navbar">
     <ul id="menu" class="menu">
         <li class="nav-item">
-            <a href="http://fedskm.ddns.net" class="<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
+            <a href="http://fedskm.ddns.net" class=" <?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
                 echo "active";}
                 else{
                     echo "";
@@ -92,7 +92,7 @@
           </li>
 
 
-          <li class="dropdown active"><a href="#" class="active"><span>Media</span> <i class="bi bi-chevron-down active"></i></a>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li>
               <a href="buletin" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
@@ -118,7 +118,7 @@
             </ul>
           </li>
 
-          <a href="membership" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="membership"){
+          <a href="membership" class="active <?php if(basename($_SERVER['PHP_SELF'])=="membership"){
                 echo "active";
             }else{
                 echo "";
@@ -140,4 +140,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+
+    </div>
   </header><!-- End Header -->

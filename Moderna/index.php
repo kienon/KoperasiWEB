@@ -1,6 +1,6 @@
 <?php
 	include 'db_connect.php';
-	include 'headerHome.php';
+	include 'header.php';
 ?>
 <body>
   <!-- ======= Hero Section ======= -->
@@ -37,109 +37,120 @@
   </section><!-- End Hero -->
 
   <main id="main">
-        <!-- ======= About Section ======= -->
-        <section class="about" data-aos="fade-up" id="about">
-          <h2 class="text-center">About Us</h2><br>
-          <div class="container">
     
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="assets/img/about.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
+    <!--Kata aluan Pengerusi-->
+    <section>
+    <div class="container justify-content-center">
+
+      <div class="section-title">
+        <h2>Kata Aluan Pengerusi</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 col-md-2 d-flex">
+          <div class="member">
+            <img src="assets/img/team/team-1.jpg" alt="" style="width:400px;height:400px">
+            <div class="bg-dark rounded">
+            <h4 class="text-center text-light">Namanya</h4>
+            <h6 class="text-center text-light">Pengerusi</h6>
             </div>
-    
           </div>
-        </section><!-- End About Section -->
+        </div>
+
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <p>
+              Assalamu’alaikum Warahmatullahi Wabarakatuh​<br>
+
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus<br><br>
+
+              Going Digital with …..​<br>
+
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus<br><br>
+
+              ​
+
+              Brighter prospects ahead​<br>
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+              Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus<br><br>
+
+              Terima kasih.​<br>
+
+              Wabillahitaufik Walhidayah, Wassalamualaikum Warahmatullahi Wabarakatuh
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Kata Aluan-->
+
     
         <!-- ======= Facts Section ======= -->
         <section class="facts section-bg justify-content-center align-items-center" data-aos="fade-up">
           <div class="container">
     
             <div class="row counters">
-            
-            <div class="col-lg-2 col-6">
-              <lord-icon
-                  src="https://cdn.lordicon.com/gqzfzudq.json"
-                  trigger="hover"
-                  style="width:100px;height:100px">
-              </lord-icon>
-              </div>    
-              <div class="col-lg-4 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-                <p><b>COOPERATIVE STORES</b></p>
+               
+              <div class="col-lg-3 col-4 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
+                <p><b>Pembekal</b></p>
               </div>
 
-              <div class="col-lg-3 col-6">
-              <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
-              <lord-icon
-                  src="https://cdn.lordicon.com/qrbokoyz.json"
-                  trigger="loop-on-hover"
-                  delay="2000"
-                  style="width:100px;height:100px">
-              </lord-icon>
+              <div class="col-lg-3 col-4 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="3" class="purecounter"></span>
+                <p><b>Unit Penyimpanan Stok</b></p>
               </div>
-    
-              <div class="col-lg-3 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="52321" data-purecounter-duration="1" class="purecounter"></span>
-                <p><b>TOTAL NUMBER OF SALES</b></p>
+              <div class="col-lg-3 col-4 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="28" data-purecounter-duration="3" class="purecounter"></span>
+                <p><b>DC & SUB-DC</b></p>
+              </div>
+              <div class="col-lg-3 col-4 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="2577" data-purecounter-duration="3" class="purecounter"></span>
+                <p><b>Kedai</b></p>
               </div>
     
             </div>
     
           </div>
         </section><!-- End Facts Section -->
+
+
     <!-- ======= Services Section ======= -->
-    <section class="services" id="service">
-      <div class="container">
-      <h2 class="text-center">Our Services</h2><br>
+    <section class="services " id="service">
+      <div class="container justify-content-center">
+      <h2 class="text-center">INFOGRAFIK</h2><br>
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+          <div class=" col-lg-12 d-flex align-items-center justify-content-md-center" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <img src="assets/img/infografik/Picture1.png" alt="" style="width:800px;height:500px">
+              <h4 class="title"><a href="">MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
             </div>
           </div>
+         
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <img src="assets/img/infografik/Picture2.png" alt="" style="width:500px;height:400px">
+              <h4 class="title"><a href="">Taburan Koperasi Pemborongan & Peruncitan</a></h4>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-10 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-blue">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <img src="assets/img/infografik/Picture3.png" alt="" style="width:500px;height:400px">
+              <h4 class="title"><a href="">Rangkaian DC/SUB-DC Koperasi & Outlet​</a></h4>
             </div>
           </div>
 
@@ -151,7 +162,8 @@
        <!-- ======= Contact Section ======= -->
        <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">
         <div class="container">
-        <h2 class="text-center">Contact Us</h2><br>
+        <h2 class="text-center">Hubungi Kami</h2><br>
+        <p class="text-center">Anda boleh menghubungi kami untuk pertanyaan lebih lanjut</p><br>
   
           <div class="row">
   
@@ -161,8 +173,8 @@
                 <div class="col-md-12">
                   <div class="info-box">
                     <i class="bx bx-map"></i>
-                    <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h3>Alamat</h3>
+                    <p>MENARA SURUHANJAYA KOPERASI MALAYSIA (MENARA SKM) TINGKAT 08, CHANGKAT SEMANTAN, OFF JALAN SEMANTAN, BUKIT DAMANSARA 50490 <br> KUALA LUMPUR</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -187,20 +199,20 @@
               <form class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" data-sb-feedback="email:email" placeholder="Your Email" required>
+                    <input type="email" class="form-control" name="email" id="email" data-sb-feedback="email:email" placeholder="Email Anda" required>
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="body" id="body" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="body" id="body" rows="5" placeholder="Mesej Anda" required></textarea>
                 </div>
                 <br>
-                <div class="text-center"><button type="submit"  onclick="sendEmail()">Send Message</button></div>
+                <div class="text-center"><button type="submit"  onclick="sendEmail()">Hantar Mesej</button></div>
                 <h4 class="sent-notification"></h4>
               </form>
             </div>

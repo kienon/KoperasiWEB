@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team - Moderna Bootstrap Template</title>
+  <title>Federasi SKM</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,6 +15,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <!-- BS4 old-->
+  <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/bootstrap/@4.1.3/css/bootstrap.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -37,22 +39,19 @@
   ======================================================== -->
 </head>
 
-<body>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="./"><span>Federasi</span></a></h1>
+        <h1 class="text-light"><a href="./"><span>Fed Borong</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
-
-      <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar">
     <ul id="menu" class="menu">
         <li class="nav-item">
-            <a href="http://fedskm.ddns.net" class="<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
+            <a href="http://fedskm.ddns.net" class=" active<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
                 echo "active";}
                 else{
                     echo "";
@@ -92,7 +91,7 @@
           </li>
 
 
-          <li class="dropdown active"><a href="#" class="active"><span>Media</span> <i class="bi bi-chevron-down active"></i></a>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li>
               <a href="buletin" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
@@ -140,4 +139,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+
+        </div>
   </header><!-- End Header -->

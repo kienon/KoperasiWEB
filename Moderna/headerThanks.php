@@ -50,22 +50,96 @@
       </div>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="" href="./">Home</a></li>
-          <li><a href="./#about">About</a></li>
-          <li><a href="./#service">Services</a></li>
-          <li><a href="./#contact">Contact Us</a></li>
-          <li class="dropdown"><a href="#"><span>Corporate</span> <i class="bi bi-chevron-down"></i></a>
+    <ul id="menu" class="menu">
+        <li class="nav-item">
+            <a href="http://fedskm.ddns.net" class="<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
+                echo "active";}
+                else{
+                    echo "";
+                    }?>">Halaman Utama</a>
+
+            <li class="dropdown"><a href="#"><span>Info Korporat</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="corprofile">Corporate Profile</a></li>
-              <li><a href="corteam">Corporate Team</a></li>
-              <li><a href="vm">Vision & Mission</a></li>
+              <li>
+              <a href="companyprofile" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="corporateprofile"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Profil Syarikat</a>
+              </li>
+              <li>
+              <a href="vm" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="vm"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Visi & Misi</a>
+              </li>
+              <li>
+              <a href="boardmember" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="boardmember"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Ahli Lembaga</a>
+              </li>
+              <li>
+              <a href="penghargaan" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="penghargaan"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Penghargaan</a>
+              </li>
             </ul>
           </li>
-          <li><a href="media">Media</a></li>
+
+
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+              <a href="buletin" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Buletin & Acara</a>
+              </li>
+              <li>
+              <a href="report" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="report"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Laopran Tahunan</a>
+              </li>
+              <li>
+              <a href="gallery" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="gallery"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Galeri</a>
+              </li>
+            </ul>
+          </li>
+
+          <a href="membership" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="membership"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Keahlian</a>
+
+            <a href="career" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="career"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Kerjaya</a>
+
+            <a href="./#contact" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="./#contact"){
+                echo "active";
+            }else{
+                echo "";
+            }?>">Hubungi Kami</a>
+
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        </nav>
 
     </div>
   </header><!-- End Header -->
