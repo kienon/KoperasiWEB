@@ -360,7 +360,6 @@ h6,
   top: 0;
   width: 130%;
   height: 96%;
-  background: #68A4C4;
   opacity: 0.3;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -431,7 +430,7 @@ h6,
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   #hero p {
     width: 60%;
   }
@@ -439,6 +438,19 @@ h6,
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
+  }
+
+  .services .icon-box img {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 400px; width:100%; 
   }
 }
 
@@ -458,6 +470,7 @@ h6,
     transform: translateX(-50%) translateY(20px) rotate(4deg);
   }
 }
+
 
 @media (max-width: 575px) {
   #hero h2 {
@@ -480,6 +493,28 @@ h6,
     height: 94%;
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%) translateY(20px) rotate(4deg);
+  }
+}
+
+@media (min-width: 470px){
+  .portfolio .portfolio-report1 a {
+    position:absolute; 
+    top:0; right:0;
+    padding: 5px;
+    margin: 10px 40px 15px 0;
+  }
+  
+  .portfolio .portfolio-report2 a {
+    position:absolute; 
+    top:0; right:0;
+    padding: 5px;
+    margin: 10px 40px 15px 0;
+  }
+  .team .member img {
+    position: relative;
+    overflow: hidden;
+    width:300px;height:300px;
+    object-fit: contain; 
   }
 }
 
@@ -657,6 +692,19 @@ section {
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
+}
+
+.services .icon-box img {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+  height: 800px; width:100%; 
 }
 
 .services .icon {
@@ -1265,12 +1313,91 @@ section {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
+
+  .services .icon-box img {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 400px; width:100%; 
+  }
+
+  .team .member img {
+    position: relative;
+    overflow: hidden;
+    width:300px;height:300px;
+    object-fit: contain; 
+  }
+}
+
+@media (min-width: 770px) {
+
+.team .member img {
+    position: relative;
+    overflow: hidden;
+    width:300px;height:300px;
+    object-fit: contain; 
+  }
 }
 
 @media (max-width: 767px) {
   .pricing .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
+  }
+
+  .services .icon-box img {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 400px; width:100%; 
+    object-fit: contain; 
+  }
+
+.team .member img {
+    position: relative;
+    overflow: hidden;
+    width:300px;height:300px;
+    object-fit: contain; 
+  }
+}
+
+@media (max-width: 550px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  .services .icon-box img {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 400px; width:100%; 
+    object-fit: contain; 
+  }
+
+.team .member img {
+    position: relative;
+    overflow: hidden;
+    width:300px;height:300px;
+    object-fit: contain; 
   }
 }
 
@@ -1279,6 +1406,21 @@ section {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
+
+  .services .icon-box img {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+    height: 400px; width:100%; 
+    object-fit: contain; 
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1323,6 +1465,29 @@ section {
   border-radius: 4px;
   margin: 0 0 30px 0;
 }
+
+.portfolio .portfolio-report1 {
+  background: #d6f3b4;
+  overflow: hidden;
+  min-height: 3px;
+  position: relative;
+  border-radius: 40px;
+  margin: 0 0 30px 0;
+  padding: 10px;
+}
+
+
+.portfolio .portfolio-report2 {
+  background: #eeabc4;
+  overflow: hidden;
+  min-height: 3px;
+  position: relative;
+  border-radius: 40px;
+  margin: 0 0 30px 0;
+  padding: 10px;
+}
+
+
 
 .portfolio .portfolio-item img {
   transition: all 0.3s ease-in-out;
@@ -1442,9 +1607,9 @@ section {
   overflow: hidden;
 }
 
-.team .member .member-img {
+.member img {
   position: relative;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .team .member .social {
@@ -1493,7 +1658,7 @@ section {
   color: #68A4C4;
 }
 
-.team .member .member-info p {
+.team .member p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;

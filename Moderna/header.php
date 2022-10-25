@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Federasi SKM</title>
+  <title>Home</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,7 +29,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: Moderna - v4.10.1
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -44,7 +43,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="./"><span>Fed Borong</span></a></h1>
+        <h1 class="text-light"><a href="./"><span>FedBorong</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -105,7 +104,7 @@
                 echo "active";
             }else{
                 echo "";
-            }?>">Laopran Tahunan</a>
+            }?>">Laporan Tahunan</a>
               </li>
               <li>
               <a href="gallery" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="gallery"){

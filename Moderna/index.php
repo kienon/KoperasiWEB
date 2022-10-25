@@ -46,18 +46,18 @@
         <h2>Kata Aluan Pengerusi</h2>
       </div>
 
-      <div class="row">
-        <div class="col-lg-5 col-md-2 d-flex">
+      <div class="row team">
+        <div class="col-lg-4 col-md-2 d-flex">
           <div class="member">
-            <img src="assets/img/team/team-1.jpg" alt="" style="width:400px;height:400px">
-            <div class="bg-dark rounded">
+            <img src="assets/img/team/team-1.jpg" alt="" style="">
+            <div class="bg-dark">
             <h4 class="text-center text-light">Namanya</h4>
             <h6 class="text-center text-light">Pengerusi</h6>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-8 col-md-6 d-flex align-items-stretch">
           <div class="member">
             <p>
               Assalamu’alaikum Warahmatullahi Wabarakatuh​<br>
@@ -102,20 +102,20 @@
     
             <div class="row counters">
                
-              <div class="col-lg-3 col-4 text-center">
+              <div class="col-sm-3 col-5 text-center">
                 <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
                 <p><b>Pembekal</b></p>
               </div>
 
-              <div class="col-lg-3 col-4 text-center">
+              <div class="col-sm-3 col-5 text-center">
                 <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="3" class="purecounter"></span>
                 <p><b>Unit Penyimpanan Stok</b></p>
               </div>
-              <div class="col-lg-3 col-4 text-center">
+              <div class="col-sm-3 col-5 text-center">
                 <span data-purecounter-start="0" data-purecounter-end="28" data-purecounter-duration="3" class="purecounter"></span>
                 <p><b>DC & SUB-DC</b></p>
               </div>
-              <div class="col-lg-3 col-4 text-center">
+              <div class="col-sm-3 col-5 text-center">
                 <span data-purecounter-start="0" data-purecounter-end="2577" data-purecounter-duration="3" class="purecounter"></span>
                 <p><b>Kedai</b></p>
               </div>
@@ -134,7 +134,7 @@
         <div class="row">
           <div class=" col-lg-12 d-flex align-items-center justify-content-md-center" data-aos="fade-up">
             <div class="icon-box icon-box-pink">
-            <img src="assets/img/infografik/Picture1.png" alt="" style="width:800px;height:500px">
+            <img src="assets/img/infografik/Picture1.png" alt="" style=" ">
               <h4 class="title"><a href="">MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
             </div>
           </div>
@@ -142,14 +142,14 @@
 
           <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
-            <img src="assets/img/infografik/Picture2.png" alt="" style="width:500px;height:400px">
+            <img src="assets/img/infografik/Picture2.png" alt="" style="height:400px;">
               <h4 class="title"><a href="">Taburan Koperasi Pemborongan & Peruncitan</a></h4>
             </div>
           </div>
 
           <div class="col-md-10 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-green">
-            <img src="assets/img/infografik/Picture3.png" alt="" style="width:500px;height:400px">
+            <img src="assets/img/infografik/Picture3.png" alt="" style="height:400px;">
               <h4 class="title"><a href="">Rangkaian DC/SUB-DC Koperasi & Outlet​</a></h4>
             </div>
           </div>
@@ -280,7 +280,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
