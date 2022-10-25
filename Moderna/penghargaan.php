@@ -6,15 +6,14 @@
 
 <main id="main">
 
-    <!-- ======= Our Team Section ======= -->
-    <section class="breadcrumbs">
+   <!-- ======= Our Team Section ======= -->
+   <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          
+          <h2>Penghargaan</h2>
           <ol>
-            <li><a href="index">Home</a></li>
-            <li>Anugerah dan Penghargaan</li>
+            
           </ol>
         </div>
 

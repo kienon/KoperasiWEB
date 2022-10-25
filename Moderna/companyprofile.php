@@ -13,8 +13,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Profil Syarikat</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Profil Syarikat</li>
+            
           </ol>
         </div>
 
@@ -52,6 +51,8 @@ Pihak Federasi dapat meningkatkan tahap ekonomi anggota mereka dan selaras denga
            </div>
     </div>
     </section> <!-- end more info -->
+
+
     <section class="features">
     <div class="container">
 
@@ -190,7 +191,7 @@ Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan
           <div class="col-md-6">
           <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
-          <div class="col-md-7 pt-4">
+          <div class="col-md-9 ">
             <h3>PASARAN</h3>
             <p class="fst-italic">
             Federasi mengsasarkan pengedaran barangan kepada semua anggota-anggota federasi yang terlibat dalam sektor pemborongan dana peruncitan (pengeluar & pembekal produk, DC, sub-DC dan outlet runcit koperasi) pada peringkat permulaan. 

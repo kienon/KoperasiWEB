@@ -13,8 +13,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Visi dan Misi</h2>
           <ol>
-            <li><a href="index">Home</a></li>
-            <li>Visi dan Misi</li>
+            
           </ol>
         </div>
 
