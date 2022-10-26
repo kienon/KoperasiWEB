@@ -5,7 +5,7 @@
 <body>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div id="heroCarousel" class="container carousel carousel-fade " data-bs-ride="carousel">
 
       <!-- Slide  -->
       <?php 
@@ -18,10 +18,8 @@
         if(in_array($img,array('.','..')))
         continue;
       ?>
-      <div class="carousel-item active">
-        <div class="carousel-container">
-        <img src="<?php echo $dir.$img ?>" alt="<?php echo $img ?>"  style="width:1980px;height:1080px;">
-        </div>
+      <div class="carousel carousel-item active carousel-container"  data-bs-interval="3000">
+        <img src="<?php echo $dir.$img ?>" alt="<?php echo $img ?>" style="width:1980px;height:1080px;">
       </div>
       <?php endforeach; ?>
       
@@ -51,7 +49,7 @@
           <div class="member">
             <img src="assets/img/team/team-1.jpg" alt="" style="">
             <div class="bg-dark">
-            <h4 class="text-center text-light">Y.H DATO' AMIR HAMDAN YUSOF</h4>
+            <h4 class="text-center text-light">Y.H DATO' AMIR<br> HAMDAN YUSOF</h4>
             <h6 class="text-center text-light">Pengerusi</h6>
             </div>
           </div>
@@ -126,10 +124,10 @@
         </section><!-- End Facts Section -->
 
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Infographic Section ======= -->
     <section class="services " id="service1">
       <h2 class="text-center">INFOGRAFIK</h2><br>
-      <div class="container justify-content-center text-center">     <!--to make a whole div href style="cursor: pointer;" onclick="window.location='#';"--> 
+      <div class="container justify-content-center text-center"> 
       <h4 class="title"><a>MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
 
         <div class="row">
@@ -141,7 +139,8 @@
         </div>
 
       </div>
-      <section> <!--creating a section to ensure the row of this two column not messed up-->
+      <!--Infographic section2-->
+      <section> 
       <div class="row justify-content-center text-center">
 
       <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
@@ -159,8 +158,8 @@
           </div>
 
       </div>
-      </section>
-    </section><!-- End Services Section -->   
+      </section><!-- End Infographic Section 2 -->
+    </section><!-- End Infographic Section 1 -->   
 
        <!-- ======= Contact Section ======= -->
        <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">
@@ -205,7 +204,7 @@
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required><br>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" data-sb-feedback="email:email" placeholder="Email Anda" required>
+                    <input type="email" class="form-control" name="email" id="email" data-sb-feedback="email:email" placeholder="Email Anda" required><br>
                   </div>
                 </div>
                 <div class="form-group mt-3">
@@ -215,11 +214,6 @@
                   <textarea class="form-control" name="body" id="body" rows="5" placeholder="Mesej Anda" required></textarea>
                 </div>
                 <br>
-                <!--div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div-->
                 <div class="text-center"><button type="submit"  onclick="sendEmail()">Hantar Mesej</button></div>
                 <h4 class="sent-notification"></h4>
               </form>

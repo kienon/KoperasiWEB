@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
     <!-- BS4 old-->
   <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/bootstrap/@4.1.3/css/bootstrap.min.css">
+  
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -26,7 +27,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <!--JS-->
+  <link href="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- =======================================================
