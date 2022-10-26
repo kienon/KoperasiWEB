@@ -51,7 +51,7 @@
           <div class="member">
             <img src="assets/img/team/team-1.jpg" alt="" style="">
             <div class="bg-dark">
-            <h4 class="text-center text-light">Namanya</h4>
+            <h4 class="text-center text-light">Y.H DATO' AMIR HAMDAN YUSOF</h4>
             <h6 class="text-center text-light">Pengerusi</h6>
             </div>
           </div>
