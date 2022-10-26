@@ -21,13 +21,17 @@
     </section><!-- End Our Team Section -->
 
     <section class="features">
-    <div class="container">
+    <h2 class="text-center">SENARAI AHLI FEDERASI YANG AKTIF PEMBORONGAN DAN PERUNCITAN</h2><br>
+      <div class="container justify-content-center text-center"> 
+        <div class="row">
+          <div class=" col-lg-12 d-flex align-items-center justify-content-md-center" data-aos="fade-up">
+            <div class="features text-center">
+            <img src="assets/img/ahli/senarai_ahli.PNG"  alt="" style=" "><br>
+            </div>
+          </div>
+        </div>
 
-           <div class="section-title">
-             <h2>SENARAI AHLI FEDERASI YANG AKTIF PEMBORONGAN DAN PERUNCITAN</h2>
-             <img src="assets/img/testimonials/senarai_ahli.PNG"  alt="">
-           </div>
-    </div>
+      </div>
     </section> <!-- end more info -->
 
   </main><!-- End #main -->
