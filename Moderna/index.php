@@ -142,15 +142,15 @@
       <!--Infographic section2-->
       <section> 
       <div class="row justify-content-center text-center">
-
-      <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="col-lg-6 d-flex align-items-center justify-content-md-center" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box-cyan text-center">
             <h4 class="title"><a>Taburan Koperasi Pemborongan & Peruncitan</a></h4>
             <img src="assets/img/infografik/Picture2.png" alt="" style="height:350px;">
             </div>
           </div>
 
-          <div class="col-md-10 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex align-items-center justify-content-md-center" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box-cyan text-center">              
             <h4 class="title"><a>Rangkaian DC/SUB-DC Koperasi & Outlet​</a></h4>
             <img src="assets/img/infografik/Picture3.png" alt="" style="height:350px;">
