@@ -127,36 +127,39 @@
 
 
     <!-- ======= Services Section ======= -->
-    <section class="services " id="service">
-      <div class="container justify-content-center">
+    <section class="services " id="service1">
       <h2 class="text-center">INFOGRAFIK</h2><br>
+      <div class="container justify-content-center text-center">     <!--to make a whole div href style="cursor: pointer;" onclick="window.location='#';"--> 
+      <h4 class="title"><a>MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
 
         <div class="row">
           <div class=" col-lg-12 d-flex align-items-center justify-content-md-center" data-aos="fade-up">
-            <div class="icon-box icon-box-pink">
-            <img src="assets/img/infografik/Picture1.png" alt="" style=" ">
-              <h4 class="title"><a href="">MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
+            <div class="icon-box-cyan text-center">
+            <img src="assets/img/infografik/Picture1.png" alt="" style=" "><br>
             </div>
           </div>
-         
+        </div>
 
-          <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-cyan">
-            <img src="assets/img/infografik/Picture2.png" alt="" style="height:400px;">
-              <h4 class="title"><a href="">Taburan Koperasi Pemborongan & Peruncitan</a></h4>
+      </div>
+      <section> <!--creating a section to ensure the row of this two column not messed up-->
+      <div class="row justify-content-center text-center">
+
+      <div class="col-md-10 col-lg-6 d-flex align-items-" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box-cyan text-center">
+            <h4 class="title"><a>Taburan Koperasi Pemborongan & Peruncitan</a></h4>
+            <img src="assets/img/infografik/Picture2.png" alt="" style="height:350px;">
             </div>
           </div>
 
           <div class="col-md-10 col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-green">
-            <img src="assets/img/infografik/Picture3.png" alt="" style="height:400px;">
-              <h4 class="title"><a href="">Rangkaian DC/SUB-DC Koperasi & Outlet​</a></h4>
+            <div class="icon-box-cyan text-center">              
+            <h4 class="title"><a>Rangkaian DC/SUB-DC Koperasi & Outlet​</a></h4>
+            <img src="assets/img/infografik/Picture3.png" alt="" style="height:350px;">
             </div>
           </div>
 
-        </div>
-
       </div>
+      </section>
     </section><!-- End Services Section -->   
 
        <!-- ======= Contact Section ======= -->
@@ -199,19 +202,24 @@
               <form class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required><br>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input type="email" class="form-control" name="email" id="email" data-sb-feedback="email:email" placeholder="Email Anda" required>
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" required><br>
                 </div>
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="body" id="body" rows="5" placeholder="Mesej Anda" required></textarea>
                 </div>
                 <br>
+                <!--div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div-->
                 <div class="text-center"><button type="submit"  onclick="sendEmail()">Hantar Mesej</button></div>
                 <h4 class="sent-notification"></h4>
               </form>
