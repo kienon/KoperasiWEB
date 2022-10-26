@@ -1421,7 +1421,7 @@ section {
   }
 
   .container img {
-    max-width: 100%;
+    max-width: auto;
     height: 400px;
 }
 }
