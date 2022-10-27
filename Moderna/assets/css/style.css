@@ -113,6 +113,31 @@ h6,
   margin-top: 80px;
 }
 
+/*--------------------------------
+Parallax Effect on image
+---------------------------------*/
+.parallax {
+  /* The image used */
+  background-image: url("http://fedskm.ddns.net/assets/img/bg/parallax1.jpg");
+
+  /* Set a specific height */
+  min-height: auto; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---------------------------------
+END of Parallax Effect on image
+-----------------------------------*/
+
+
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1015,7 +1040,7 @@ section {
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #68A4C4;
+  color: white;
 }
 
 .facts .counters p {

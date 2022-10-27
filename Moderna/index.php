@@ -35,29 +35,25 @@
   </section><!-- End Hero -->
 
   <main id="main">
-    
-    <!--Kata aluan Pengerusi-->
-    <section>
-    <div class="container justify-content-center">
 
-      <div class="section-title">
+       <!--Kata aluan Pengerusi-->
+      <section id="kata" class="">
+      <div class="container">
+
+        <div class="section-title">
         <h2>Kata Aluan Pengerusi</h2>
-      </div>
+        </div>
 
-      <div class="row team">
-        <div class="col-lg-4 col-md-2 d-flex">
-          <div class="member">
-            <img src="assets/img/team/team-1.jpg" alt="" style="">
+        <div class="row">
+          <div class="col-lg-4 order-lg-1">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
             <div class="bg-dark">
             <h4 class="text-center text-light">Y.H DATO' AMIR<br> HAMDAN YUSOF</h4>
             <h6 class="text-center text-light">Pengerusi</h6>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-8 col-md-6 d-flex align-items-stretch">
-          <div class="member">
-            <p>
+          <div class="col-lg-8 pt-4 pt-lg-0 order-lg-2 content d-flex align-items-stretch">
+            <p class="fst-italic">
               Assalamu’alaikum Warahmatullahi Wabarakatuh​<br>
 
               Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
@@ -87,18 +83,19 @@
 
               Wabillahitaufik Walhidayah, Wassalamualaikum Warahmatullahi Wabarakatuh
             </p>
-            </div>
           </div>
         </div>
+
+      </div>
       </section>
       <!--End Kata Aluan-->
 
     
         <!-- ======= Facts Section ======= -->
-        <section class="facts section-bg justify-content-center align-items-center" data-aos="fade-up">
-          <div class="container">
+        <section class="facts section-bg justify-content-center align-items-center parallax" data-aos="fade-up">
+          <div class="container text-white">
     
-            <div class="row counters">
+            <div class="row counters text-white">
                
               <div class="col-sm-3 col-5 text-center">
                 <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
@@ -126,7 +123,7 @@
 
     <!-- ======= Infographic Section ======= -->
     <section class="services " id="service1">
-      <h2 class="text-center">INFOGRAFIK</h2><br>
+      <h2 class="text-center">Infografik</h2><br>
       <div class="container justify-content-center text-center"> 
       <h4 class="title"><a>MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
 
