@@ -18,7 +18,7 @@
             <h4>Capaian Pantas</h4> <!--Usefull links-->
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://ekerjaya.skm.gov.my/">Career</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="career">Career</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Soalan Lazim</a></li>
             </ul>
           </div>
@@ -26,10 +26,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Pautan Lain</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Penafian</a></li> <!--Disclaimer-->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terma Servis</a></li> <!--Terms of service-->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Dasar Keselamatan</a></li> <!--Security policy-->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Dasar Privasi</a></li> <!--Privacy policy-->            
+              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#service">Terma Pengguna</a></li> <!--Terms of service-->
+              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#disclaimer">Penafian</a></li> <!--Disclaimer-->
+              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#security">Dasar Keselamatan</a></li> <!--Security policy-->
+              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#privacy">Dasar Privasi</a></li> <!--Privacy policy-->            
             </ul>
           </div>
      
@@ -56,9 +56,9 @@
       </div>
       <div class="credits">
         <All the links in the footer should remain intact. >
-        <Licensing information: https://bootstrapmade.com/license/ >
-        <Theme Designed by BootstrapMade and Redesigned by Ahmad Amsari and Mohd Fitri @ TFP Solutions SDN BHD>
         <Released under the GNU General Public License (GPL).>
+        <Licensing information: https://bootstrapmade.com/license/>
+        <Theme Designed by BootstrapMade and Redesigned by TFP Solutions SDN BHD, authors: Ahmad Amsari and Mohd Fitri>
       </div>
     </div>
   </footer><!-- End Footer -->

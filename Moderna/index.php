@@ -159,7 +159,7 @@
     </section><!-- End Infographic Section 1 -->   
 
        <!-- ======= Contact Section ======= -->
-       <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">
+       <section class="contact bg-light" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">
         <div class="container">
         <h2 class="text-center">Hubungi Kami</h2><br>
         <p class="text-center">Anda boleh menghubungi kami untuk pertanyaan lebih lanjut</p><br>
@@ -170,21 +170,21 @@
   
               <div class="row">
                 <div class="col-md-12">
-                  <div class="info-box">
+                  <div class="info-box bg-white">
                     <i class="bx bx-map"></i>
                     <h3>Alamat</h3>
                     <p>MENARA SURUHANJAYA KOPERASI MALAYSIA (MENARA SKM) TINGKAT 08, CHANGKAT SEMANTAN, OFF JALAN SEMANTAN, BUKIT DAMANSARA 50490 <br> KUALA LUMPUR</p>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="info-box">
+                  <div class="info-box bg-white">
                     <i class="bx bx-envelope"></i>
                     <h3>Email Us</h3>
                     <p>info@example.com<br>contact@example.com</p>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="info-box">
+                  <div class="info-box bg-white">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
                     <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
@@ -195,7 +195,7 @@
             </div>
   
             <div class="col-lg-6">
-              <form class="php-email-form">
+              <form class="php-email-form bg-white">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required><br>
@@ -219,14 +219,13 @@
           </div>
   
         </div>
-      </section><!-- End Contact Section -->
-  
-      <!-- ======= Map Section ======= -->
+              <!-- ======= Map Section ======= -->
       <section class="map mt-2">
         <div class="container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7759409678583!2d101.66405601428325!3d3.1536964540053005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc497619bb2657%3A0xc3aea2720c208214!2sSuruhanjaya%20Koperasi%20Malaysia%20(SKM)!5e0!3m2!1sms!2smy!4v1665536731360!5m2!1sms!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
       </section><!-- End Map Section -->
-     <br><br>
+      </section><!-- End Contact Section -->
+  
 
   </main><!-- End #main -->
 

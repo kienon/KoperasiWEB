@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Member</title>
+  <title>Career</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -118,13 +118,13 @@
             </ul>
           </li>
 
-          <a href="membership" class="active <?php if(basename($_SERVER['PHP_SELF'])=="membership"){
+          <a href="membership" class=" <?php if(basename($_SERVER['PHP_SELF'])=="membership"){
                 echo "active";
             }else{
                 echo "";
             }?>">Keahlian</a>
 
-            <a href="career" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="career"){
+            <a href="career" class="nav-link active <?php if(basename($_SERVER['PHP_SELF'])=="career"){
                 echo "active";
             }else{
                 echo "";

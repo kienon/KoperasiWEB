@@ -94,20 +94,20 @@
 
           <li class="dropdown active"><a href="#" class="active"><span>Media</span> <i class="bi bi-chevron-down active"></i></a>
             <ul>
-              <li>
-              <a href="buletin" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
+              <!--li>
+              <a href="buletin" class="nav-link <//?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
                 echo "active";
             }else{
                 echo "";
             }?>">Buletin & Acara</a>
               </li>
               <li>
-              <a href="report" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="report"){
+              <a href="report" class="nav-link <//?php if(basename($_SERVER['PHP_SELF'])=="report"){
                 echo "active";
             }else{
                 echo "";
             }?>">Laporan Tahunan</a>
-              </li>
+              </li-->
               <li>
               <a href="gallery" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="gallery"){
                 echo "active";

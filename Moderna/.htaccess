@@ -13,7 +13,7 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteRule ^home index.php
 RewriteRule ^corteam corporateteam.php
 RewriteRule ^corprofile corporateprofile.php
-RewriteRule ^career https://ekerjaya.skm.gov.my/
+RewriteRule ^career career.php
 RewriteRule ^vm visionmision.php
 RewriteRule ^assets/?$ - [F,L]
 RewriteRule ^PHPMailer/?$ - [F,L]

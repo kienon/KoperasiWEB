@@ -12,7 +12,8 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">  
 
@@ -91,20 +92,20 @@
 
           <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li>
-              <a href="buletin" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
+              <!--li>
+              <a href="buletin" class="nav-link <//?php if(basename($_SERVER['PHP_SELF'])=="buletin"){
                 echo "active";
             }else{
                 echo "";
             }?>">Buletin & Acara</a>
               </li>
               <li>
-              <a href="report" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="report"){
+              <a href="report" class="nav-link <//?php if(basename($_SERVER['PHP_SELF'])=="report"){
                 echo "active";
             }else{
                 echo "";
             }?>">Laporan Tahunan</a>
-              </li>
+              </li-->
               <li>
               <a href="gallery" class="nav-link <?php if(basename($_SERVER['PHP_SELF'])=="gallery"){
                 echo "active";

@@ -1,20 +1,18 @@
 <?php
 	include 'db_connect.php';
-	include 'headerMember.php' 
+	include 'headerCareer.php' 
 ?>
 <body>
 
   <main id="main">
 
-    <section class="">
-    <h2 class="text-center">SENARAI AHLI FEDERASI YANG AKTIF PEMBORONGAN DAN PERUNCITAN</h2><br>
-        <div class="">
-          <div class="d-flex justify-content-md-center " data-aos="fade-up">
-            <div class="table-responsive">
-            <?php include 'ahlidisplay.php';?>
+    <section class="" id="jawatan">
+    <h2 class="text-center">JAWATAN KOSONG</h2><br>
+          <div class="d-flex  " data-aos="fade-up">
+            <div class="container">
+            <?php include 'careerdisplay.php';?>
             </div>
           </div>
-        </div>
     </section> <!-- end more info -->
 
   </main><!-- End #main -->
