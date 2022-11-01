@@ -26,4 +26,5 @@ $result = mysqli_query($conn,"SELECT * FROM jawatan");
       </div>
     </div>
   </div>
+  <br>
 		<?php endwhile; mysqli_close($conn); ?>

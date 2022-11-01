@@ -18,8 +18,8 @@
             <h4>Capaian Pantas</h4> <!--Usefull links-->
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="career">Career</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Soalan Lazim</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="career">Kerjaya</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="faq">Soalan Lazim</a></li>
             </ul>
           </div>
 

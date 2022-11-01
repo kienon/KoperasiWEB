@@ -8,7 +8,7 @@
 
     <section class="" id="copyrightpolicy">
     <h2 class="text-center">DASAR HAK CIPTA</h2><br>
-    <h5 class="text-center">SEMUA PELAWAT TERTAKLUK KEPADA UNDANG-UNDANG YANG DINYATAKAN</h5>
+    <h5 class="text-center">SEMUA PELAWAT TERTAKLUK KEPADA UNDANG-UNDANG YANG DINYATAKAN</h5><br>
           <div class="d-flex  " data-aos="fade-up">
             <div class="container">
             <div class="card" id="service">
@@ -20,13 +20,14 @@
 Federasi Borong boleh menambah, memadam atau mengubah suai mana-mana atau semua terma dan syarat dalam terma penggunaan (termasuk garis panduan ciri) pada bila-bila masa tanpa notis lanjut.</p>
                 </div>
               </div>
+              <br>
 
               <div class="card" id="disclaimer">
             <h3 class="card-header" > PENAFIAN</h3>
                 <div class="card-body">
               <p class="text-left">Federasi Borong TIDAK bertanggungjawab terhadap sebarang kehilangan atau kerosakan yang dialami kerana menggunakan maklumat di dalam laman ini.</p>
                 </div>
-              </div>
+              </div><br>
 
               <div class="card" id="security">
             <h3 class="card-header" >DASAR KESELAMATAN</h3>
@@ -36,13 +37,13 @@ Federasi Borong boleh menambah, memadam atau mengubah suai mana-mana atau semua 
               <p class="card-title"><b>Keselamatan Storan</b></p>
               <p class="text-left">Semua storan elektronik dan penghantaran data peribadi akan dilindungi dan dilindungi dan disimpan dengan menggunakan teknologi keselamatan yang sesuai.</p>  
             </div>
-              </div>
+              </div><br>
 
             <div class="card" id="privacy">
             <h3 class="card-header"> DASAR PRIVASI</h3>
-            <p class="text-left">Halaman ini menerangkan dasar privasi yang merangkumi penggunaan dan perlindungan maklumat yang dikemukakan oleh pengunjung.
-Sekiranya anda membuat transaksi atau menghantar e-mel yang mengandungi maklumat peribadi, maklumat ini mungkin akan dikongsi bersama dengan agensi awam lain untuk membantu penyediaan perkhidmatan yang lebih berkesan dan efektif. Contohnya seperti di dalam menyelesaikan aduan memerlukan maklum balas dari agensi-agensi lain</p>
             <div class="card-body">
+              <p class="text-left ">Halaman ini menerangkan dasar privasi yang merangkumi penggunaan dan perlindungan maklumat yang dikemukakan oleh pengunjung.
+Sekiranya anda membuat transaksi atau menghantar e-mel yang mengandungi maklumat peribadi, maklumat ini mungkin akan dikongsi bersama dengan agensi awam lain untuk membantu penyediaan perkhidmatan yang lebih berkesan dan efektif. Contohnya seperti di dalam menyelesaikan aduan memerlukan maklum balas dari agensi-agensi lain</p>
               <p class="card-title"><b>Maklumat Yang Dikumpul</b></p>
               <p class="text-left">Tiada maklumat peribadi akan dikumpul semasa anda melayari laman web ini kecuali maklumat yang dikemukakan oleh anda melalui e-mel.</p>
               <p class="card-title"><b>Apa yang akan berlaku jika saya membuat pautan kepada laman web yang lain?</b></p>
