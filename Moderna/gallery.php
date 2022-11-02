@@ -13,7 +13,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Galeri Fed Borong</h2>
+          <h2>Galeri FedBorong</h2>
         </div>
 
       </div>
@@ -23,38 +23,17 @@
     <section class="portfolio">
       <div class="container">
         
-<!-- Temporary closed waiting for the galeri contents
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div> -->
-
         <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-          <?php if($query->num_rows > 0){
+          <?php if(mysqli_num_rows($query) > 0){
     while($row = $query->fetch_assoc()){
         $imageURL = 'uploads/'.$row["file_name"]; ?>
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
             <div class="portfolio-item">
-              <img src="<?php echo $imageURL; ?>" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>App 1</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
+              <img src="<?php echo $imageURL; ?>" class="img-fluid" alt="" style="width:auto, height:auto;">
             </div>
           </div>
           <?php }
-          }else{ ?>
-           <p>No image(s) found...</p>
-           <?php } ?>
+          }else{ echo "Tiada gambar ditemui"; } ?>
         </div>
 
       </div>
@@ -78,7 +57,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>function onClick(element) {
+document.getElementById("$imageURL").src = element.src;
+document.getElementById("$imageURL").style.display = "block";
+}</script>
 </body>
 
 </html>

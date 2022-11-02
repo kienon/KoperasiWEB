@@ -89,35 +89,35 @@
       </div>
       </section>
       <!--End Kata Aluan-->
-
+     
     
         <!-- ======= Facts Section ======= -->
         <section class="facts section-bg justify-content-center align-items-center parallax" data-aos="fade-up">
+       
+        <?php
+$result = mysqli_query($conn,"SELECT * FROM counter");
+  ?>
           <div class="container text-white">
-    
             <div class="row counters text-white">
-               
+            <?php
+            if(mysqli_num_rows($result) > 0){ 
+            while($row= $result->fetch_assoc()){
+              $name = $row['name'];
+              $count = $row['count'];
+              ?>
               <div class="col-sm-3 col-5 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
-                <p><b>Pembekal</b></p>
+                <span data-purecounter-start="0" data-purecounter-end="<?php echo $count?>" data-purecounter-duration="3" class="purecounter"></span>
+                <h5><b><?php echo $name?></b></h5>
               </div>
-
-              <div class="col-sm-3 col-5 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="3" class="purecounter"></span>
-                <p><b>Unit Penyimpanan Stok</b></p>
-              </div>
-              <div class="col-sm-3 col-5 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="28" data-purecounter-duration="3" class="purecounter"></span>
-                <p><b>DC & SUB-DC</b></p>
-              </div>
-              <div class="col-sm-3 col-5 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="2577" data-purecounter-duration="3" class="purecounter"></span>
-                <p><b>Kedai</b></p>
-              </div>
-    
+              <?php }?>  
             </div>
-    
+            <?php
+		} else {
+			echo "";
+		}
+    mysqli_close($conn);?>
           </div>
+          
         </section><!-- End Facts Section -->
 
 
