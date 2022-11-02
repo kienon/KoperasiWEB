@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2022 at 01:57 AM
+-- Generation Time: Nov 02, 2022 at 01:54 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -130,8 +130,19 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(255) CHARACTER SET latin1 NOT NULL,
   `email` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `password` varchar(255) CHARACTER SET latin1 NOT NULL
+  `password` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `email`, `password`, `status`) VALUES
+(3, 'admin', 'admin@min.com', '$2y$10$GBoD2oKmJtGYc/HGoolt7.zynvcalGMN1ln04uyeeP/sbpBeRkmWy', 1),
+(4, 'kokok', 'kokok@demo.com', '$2y$10$vyrMbeOnTa6KwCZ6td2.hOoXK2JHlpCu8R/hpcJ8LEoXPVkzmu3nK', 2),
+(5, 'amsari', 'sari@demo.com', '$2y$10$STlzgLPIVgEcKTNkElexnOAnX.gjDH3Ro8UxCd18MxmMbBdZ.aAly', 2),
+(6, 'admin2', 'admin2@demo.com', '$2y$10$aHlivgWGRROc3wYXvZrgBebEZ23BYJBuOoCdZWOv1MXzVqSZjoZhC', 1);
 
 -- --------------------------------------------------------
 
@@ -245,7 +256,7 @@ ALTER TABLE `slides`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `website_setting`
