@@ -267,6 +267,7 @@ $row = mysqli_fetch_assoc($result);
                 </fieldset>
                 
                 <div class="text-center">
+                  <a href="admin-view" class="btn btn-secondary">Back</a>
                   <button type="submit" name="signup-submit" class="btn btn-primary">Submit</button>
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
