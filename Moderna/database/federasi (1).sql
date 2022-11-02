@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 01:54 AM
+-- Generation Time: Nov 02, 2022 at 03:01 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -45,6 +45,34 @@ CREATE TABLE `counter` (
   `name` varchar(50) NOT NULL,
   `count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `id` int(11) NOT NULL,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `uploaded_on` datetime NOT NULL,
+  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `images`
+--
+
+INSERT INTO `images` (`id`, `file_name`, `uploaded_on`, `status`) VALUES
+(1, 'portfolio-2.jpg', '2022-11-02 09:54:13', '1'),
+(2, 'portfolio-3.jpg', '2022-11-02 09:54:48', '1'),
+(3, 'portfolio-4.jpg', '2022-11-02 09:54:54', '1'),
+(4, 'portfolio-5.jpg', '2022-11-02 09:54:59', '1'),
+(5, 'portfolio-6.jpg', '2022-11-02 09:55:04', '1'),
+(6, 'portfolio-7.jpg', '2022-11-02 09:55:09', '1'),
+(7, 'portfolio-8.jpg', '2022-11-02 09:55:15', '1'),
+(8, 'portfolio-details-1.jpg', '2022-11-02 09:55:24', '1'),
+(9, 'portfolio-details-3.jpg', '2022-11-02 09:58:20', '1');
 
 -- --------------------------------------------------------
 
@@ -187,6 +215,12 @@ ALTER TABLE `counter`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `jawatan`
 --
 ALTER TABLE `jawatan`
@@ -233,6 +267,12 @@ ALTER TABLE `about`
 --
 ALTER TABLE `counter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `jawatan`
