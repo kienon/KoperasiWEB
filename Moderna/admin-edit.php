@@ -2,7 +2,15 @@
 <?php
     if(isset($_SESSION['username'])) {
 ?>
-<?php include 'admin/admin-header.php' ?>
+<?php 
+include 'admin/admin-header.php';
+require('db_connect.php');
+$id=$_REQUEST['id'];
+$query = "SELECT * from user where id='".$id."'"; 
+$result = mysqli_query($conn, $query) or die ( mysqli_error());
+$row = mysqli_fetch_assoc($result);
+?>
+?>
 <body>
 
 <!-- ======= Header ======= -->
@@ -148,6 +156,13 @@
       </li>
 
   <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+        <i class="bi bi-images"></i>
+          <span>Gallery</span>
+        </a>
+    </li>
+
+  <li class="nav-item">
     <a class="nav-link collapsed" href="#">
       <i class="bi bi-card-heading"></i>
       <span>Jawatan Kosong</span>
@@ -167,44 +182,61 @@
 
 <main id="main" class="main">
 
-    
+    <div class="pagetitle">
+      <h1>Edit Details</h1>
+    </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
-        <div class="col-lg-8">
-
+        
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Add Admin</h5>
-
+            <div class="card-body"><br>
+               <?php
+               $status = "";
+               if(isset($_POST['new']) && $_POST['new']==1)
+               {
+               $id=$_REQUEST['id'];
+               $name =$_REQUEST['uid'];
+               $email =$_REQUEST['mail'];
+               $pwd =$_REQUEST['pwd'];
+               if(empty($pwd)) {
+                $update="UPDATE `user` SET `name` = '$name', `email` = '$email' WHERE `id` = '$id';";
+               } 
+                else {
+                $hashpwd = password_hash($pwd, PASSWORD_DEFAULT);
+                $update="UPDATE `user` SET `name` = '$name', `email` = '$email', `password` = '$pwd' WHERE `id` = '$id';";
+               }
+               mysqli_query($conn, $update) or die(mysqli_error());
+               $status = "Record Updated Successfully. </br></br>
+               <a href='admin-view.php'>View Updated Record</a>";
+               echo '<p style="color:#FF0000;">'.$status.'</p>';
+               }else {
+               ?>
               <!-- Horizontal Form -->
-              <form action="admin/admin-signup-inc" method="POST">
+              <form action="" method="POST">
+              <input type="hidden" name="new" value="1" />
+              <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
-                    <input type="text" name="uid" class="form-control" id="inputText">
+                    <input type="text" name="uid" class="form-control" id="inputText" value="<?php echo $row['name'] ?>">
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
-                    <input type="email" name="mail" class="form-control" id="inputEmail">
+                    <input type="email" name="mail" class="form-control" id="inputEmail" value="<?php echo $row['email'] ?>">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label">Password</label>
+                  <label class="col-sm-2 col-form-label">New Password (leave blank if not change)</label>
                   <div class="col-sm-10">
                     <input type="password" name="pwd" class="form-control">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label">Password2</label>
-                  <div class="col-sm-10">
-                    <input type="password" name="pwd-repeat" class="form-control">
                   </div>
                 </div>
                 <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                   <div class="col-sm-10">
+                    <?php if ($row['status']==2) { ?>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="admin" id="gridRadios1" value="2" checked>
                       <label class="form-check-label" for="gridRadios1">
@@ -217,7 +249,20 @@
                         priviledge admin
                       </label>
                     </div>
-                    
+                    <?php }else {?>
+                        <div class="form-check">
+                      <input class="form-check-input" type="radio" name="admin" id="gridRadios1" value="2">
+                      <label class="form-check-label" for="gridRadios1">
+                        ordinary admin
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="admin" id="gridRadios2" value="1" checked>
+                      <label class="form-check-label" for="gridRadios2">
+                        priviledge admin
+                      </label>
+                    </div>
+                    <?php } ?>   
                   </div>
                 </fieldset>
                 
@@ -226,7 +271,7 @@
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
               </form><!-- End Horizontal Form -->
-
+              <?php } ?>
             </div>
           </div>
 
@@ -234,7 +279,7 @@
            
           </div>
 
-        </div>
+        
 
         
       </div>
