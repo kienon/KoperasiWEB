@@ -2,18 +2,18 @@
 <?php
     if(isset($_SESSION['username'])) {
 ?>
-<?php
-
+<?php 
 include 'admin/admin-header.php';
-require('db_connect.php');
-
+include 'db_connect.php';
+$query = $conn->query("SELECT * FROM images ORDER BY uploaded_on DESC");
 ?>
+
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
-  <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center justify-content-between">
       <a href="admin-index" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">FEDBORONG ADMIN</span>
       </a>
@@ -42,12 +42,12 @@ require('db_connect.php');
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="admin-assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION['username'];  ?></span>
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION['username']; ?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6><?php echo $_SESSION['username'];  ?></h6>
+              <h6><?php echo $_SESSION['username']; ?></h6>
               <span>Web Designer</span>
             </li>
             <li>
@@ -164,41 +164,45 @@ require('db_connect.php');
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-   
-  <div class="pagetitle">
-      <h1>Admin Lists</h1>
-    </div><!-- End Page Title -->
 
-    <section class="section">
-      <div class="row">
-      <div class="card">
+     <div class="pagetitle">
+       <h1>Slides</h1>
+     </div><!-- End Page Title -->
+    
+     <section class="section">
+      <div>
+        <div class="card">
             <div class="card-body">
-              <h5 class="card-title"></h5>
+              <h5 class="card-title">Add Image</h5>
+              <!-- Vertical Form -->
+              <form action="admin/admin-upload-gallery.php" method="POST" enctype= "multipart/form-data" class="row g-3">
+                <div class="col-12">
+                  <label for="inputNanme4" class="form-label">Select Image to add</label>
+                  <input type="file" name="file" class="form-control" id="inputNanme4">
+                </div>
+                <div class="text-center">
+                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form><!-- Vertical Form -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-top">
+      <?php if(mysqli_num_rows($query) > 0){
+        while($row = $query->fetch_assoc()){
+        $imageURL = 'uploads/'.$row["file_name"];
+        $date = $row['uploaded_on'] ?>
+        <div class="col-lg-3">
 
-              <!-- Default Table -->
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php
-                  $count=1;
-                  $sel_query="Select * from user ORDER BY id desc;";
-                  $result = mysqli_query($conn,$sel_query);
-                  while($row = mysqli_fetch_assoc($result)) { ?> 
-                  <tr>
-                    <td><?php echo $count; ?></td>
-                    <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['email'] ?></td>
-                    <td><a href="admin-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td>
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
+          <!-- Special title treatmen -->
+          <div class="card text-center">
+            <div class="card-header">
+            <img src="<?php echo $imageURL; ?>" class="card-img" alt="...">
+            </div>
+            <div class="card-body">
+              <p>Uploaded on : </p><p><?php echo $date ?></p>
+                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
                      Delete
                     </button>
                      <!-- Vertically centered Modal -->
@@ -209,23 +213,20 @@ require('db_connect.php');
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['name'] ?> ?
+                              Are you sure want to delete <?php echo $row['file_name'] ?>?
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-delete-gallery?id=<?php echo $row['id'] ?>&name=<?php echo $imageURL ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>
                       </div><!-- End Vertically centered Modal-->
-                    </td>
-                  </tr>
-                  <?php $count++; } ?>
-                </tbody>
-              </table>
-              <!-- End Default Table Example -->
             </div>
-          </div>
+          </div><!-- End Special title treatmen -->
+        </div>
+        <?php }
+          }else{ echo "Tiada gambar ditemui"; } ?>
       </div>
     </section>
 
@@ -233,8 +234,8 @@ require('db_connect.php');
 
 
 
-  <!-- ======= Footer ======= -->
-  <?php include 'admin/admin-footer.php' ?>
+ <!-- ======= Footer ======= -->
+ <?php include 'admin/admin-footer.php' ?>
 <?php 
     } else {
         header("Location: ../Moderna/admin-login?error=login_first");

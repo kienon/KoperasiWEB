@@ -102,13 +102,6 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-globe"></i>
-          <span>Website Setting</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Manage Admin</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -127,7 +120,7 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="admin-slides">
           <i class="bi bi-file-slides"></i>
           <span>Slides</span>
         </a>
@@ -141,7 +134,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="admin-gallery">
         <i class="bi bi-images"></i>
           <span>Gallery</span>
         </a>

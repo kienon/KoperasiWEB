@@ -1,10 +1,10 @@
 <?php
 // Include the database configuration file
-include 'db_connect.php';
+include '../db_connect.php';
 $statusMsg = '';
 
 // File upload path
-$targetDir = "uploads/";
+$targetDir = "../uploads/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
@@ -28,10 +28,10 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     }else{
         $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
     }
+    header("Location: ../admin-gallery?success=upload-success");
+    exit();
 }else{
     $statusMsg = 'Please select a file to upload.';
 }
 
-// Display status message
-echo $statusMsg;
 ?>

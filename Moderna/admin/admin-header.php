@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="admin-assets/css/style.css" rel="stylesheet">
+  <link href="admin-assets/css/custom.css" rel="stylesheet">
 
 </head>
 <body>
