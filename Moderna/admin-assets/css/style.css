@@ -1245,16 +1245,21 @@ h6 {
   font-size: 14px;
   transition: all 0.3s;
   border-top: 1px solid #cddfff;
+  
+}
+.footer .container-fluid {
+  background-color: #0b212d;;
 }
 
 .footer .copyright {
   text-align: center;
-  color: #012970;
+  
+  color: rgb(255, 255, 255);
 }
 
 .footer .credits {
-  padding-top: 5px;
+  padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #012970;
+  color: #a2cce3;
 }

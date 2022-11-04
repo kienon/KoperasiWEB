@@ -9,12 +9,12 @@ require('db_connect.php');
 
 ?>
 <body>
-<?php include 'admin-nav.php';?>
 
+<?php include 'admin-nav.php';?>
   <main id="main" class="main">
    
   <div class="pagetitle">
-      <h1>Admin Lists</h1>
+      <h1>Counter Lists</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
@@ -29,7 +29,7 @@ require('db_connect.php');
                   <tr>
                     <th scope="col">No.</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Count Value</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
                   </tr>
@@ -37,14 +37,14 @@ require('db_connect.php');
                 <tbody>
                   <?php
                   $count=1;
-                  $sel_query="Select * from user ORDER BY id desc;";
+                  $sel_query="Select * from counter ORDER BY id desc;";
                   $result = mysqli_query($conn,$sel_query);
                   while($row = mysqli_fetch_assoc($result)) { ?> 
                   <tr>
                     <td><?php echo $count; ?></td>
                     <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['email'] ?></td>
-                    <td><a href="admin-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td><?php echo $row['count'] ?></td>
+                    <td><a href="admin-counter-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
                     <td>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
                      Delete
@@ -61,7 +61,7 @@ require('db_connect.php');
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-counter-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>
@@ -75,6 +75,8 @@ require('db_connect.php');
             </div>
           </div>
       </div>
+
+      
     </section>
 
   </main>

@@ -23,6 +23,14 @@
   <link href="admin-assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="admin-assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 
+  <!-- Vendor JS Files -->
+
+  <script src="admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="admin-assets/vendor/quill/quill.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="admin-assets/js/main.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="admin-assets/css/style.css" rel="stylesheet">
 
@@ -114,18 +122,12 @@
                   <input type="password" name="pwd" class="form-control" id="yourPassword" required>
                   <div class="invalid-feedback">Please enter your password!</div>
                 </div>
-
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                    <label class="form-check-label" for="rememberMe">Remember me</label>
-                  </div>
-                </div>
+                
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="submit" name="login">Login</button>
-                </div>
+                </div><br>
                 <div class="col-12">
-                  <p class="small mb-0">Go back to<a href="index"> website</a></p>
+                  <p class="small mb-0 text-center">Go back to<a href="index"> website</a></p>
                 </div>
               </form>
 
@@ -135,17 +137,7 @@
       </div>
     </div>
   </section>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-
-  <script src="admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="admin-assets/vendor/quill/quill.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="admin-assets/js/main.js"></script>
-
 </body>
 
+<?php include 'admin-footer.php' ?>
 </html>

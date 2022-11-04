@@ -3,8 +3,12 @@
     <div class="footer-top">
       <div class="container">
         <div class="row justify-content-center">
-          
-        <div class="col-lg-4 col-md-6 footer-info">
+        <div class="col-lg-3 col-md-6 footer-info">
+        <div class="logo">
+        <a><img src="http://fedskm.ddns.net/assets/img/logo/logofull.png" alt="" class="img-fluid" style="width:200px; height:130px;"></a>
+      </div>
+</div>
+        <div class="col-lg-5 col-md-6 footer-info">
             <h3>Mengenai Federasi Borong</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
@@ -14,17 +18,17 @@
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div> 
-        <div class="col-lg-3 col-md-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links">
             <h4>Capaian Pantas</h4> <!--Usefull links-->
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
+              <li><i class="bx bx-chevron-right "></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="career">Kerjaya</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="faq">Soalan Lazim</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="admin-login">Portal Staff</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Pautan Lain</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#service">Terma Pengguna</a></li> <!--Terms of service-->

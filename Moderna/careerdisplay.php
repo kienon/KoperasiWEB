@@ -25,7 +25,7 @@ if(mysqli_num_rows($result) > 0){
 		<p class="text-left"><b>Tanggungjawab :</b> <?php echo $resp; ?></p>
 		<p class="text-left"><b>Syarat Permohonan :</b> <?php echo $req; ?></p>
         <a href = "mailto: hr@fedborong.com" class="btn btn-primary">Mohon Sekarang</a>
-		<a>atau Hantar Email ke hr@fedborong.com</a>
+		<a>atau Hantar Email ke <b>hr@fedborong.com</b></a>
       </div>
     </div>
   </div>

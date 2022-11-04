@@ -41,7 +41,7 @@
       <div class="container">
 
         <div class="section-title">
-        <h2>Kata Aluan Pengerusi</h2>
+        <h2 >Kata Aluan Pengerusi</h2>
         </div>
 
         <div class="row">
@@ -89,37 +89,8 @@
       </div>
       </section>
       <!--End Kata Aluan-->
-     
-    
-        <!-- ======= Facts Section ======= -->
-        <section class="facts section-bg justify-content-center align-items-center parallax" data-aos="fade-up">
-       
-        <?php
-$result = mysqli_query($conn,"SELECT * FROM counter");
-  ?>
-          <div class="container text-white">
-            <div class="row counters text-white">
-            <?php
-            if(mysqli_num_rows($result) > 0){ 
-            while($row= $result->fetch_assoc()){
-              $name = $row['name'];
-              $count = $row['count'];
-              ?>
-              <div class="col-sm-3 col-5 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="<?php echo $count?>" data-purecounter-duration="3" class="purecounter"></span>
-                <h5><b><?php echo $name?></b></h5>
-              </div>
-              <?php }?>  
-            </div>
-            <?php
-		} else {
-			echo "";
-		}
-    mysqli_close($conn);?>
-          </div>
-          
-        </section><!-- End Facts Section -->
 
+      <hr>
 
     <!-- ======= Infographic Section ======= -->
     <section class="services " id="service1">
@@ -157,6 +128,35 @@ $result = mysqli_query($conn,"SELECT * FROM counter");
       </div>
       </section><!-- End Infographic Section 2 -->
     </section><!-- End Infographic Section 1 -->   
+
+          <!-- ======= Facts Section ======= -->
+          <section class="facts section-bg justify-content-center align-items-center parallax" data-aos="fade-up">
+       
+       <?php
+$result = mysqli_query($conn,"SELECT * FROM counter");
+ ?>
+         <div class="container text-white">
+           <div class="row counters text-white">
+           <?php
+           if(mysqli_num_rows($result) > 0){ 
+           while($row= $result->fetch_assoc()){
+             $name = $row['name'];
+             $count = $row['count'];
+             ?>
+             <div class="col-sm-3 col-5 text-center">
+               <span data-purecounter-start="0" data-purecounter-end="<?php echo $count?>" data-purecounter-duration="3" class="purecounter"></span>
+               <h5><b><?php echo $name?></b></h5>
+             </div>
+             <?php }?>  
+           </div>
+           <?php
+   } else {
+     echo "";
+   }
+   mysqli_close($conn);?>
+         </div>
+         
+       </section><!-- End Facts Section -->
 
        <!-- ======= Contact Section ======= -->
        <section class="contact bg-light" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" id="contact">

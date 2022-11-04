@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 05:42 AM
+-- Generation Time: Nov 02, 2022 at 03:01 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,16 +45,6 @@ CREATE TABLE `counter` (
   `name` varchar(50) NOT NULL,
   `count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `counter`
---
-
-INSERT INTO `counter` (`id`, `name`, `count`) VALUES
-(1, 'Pembekal', 100),
-(3, 'Unit Penyimpanan Stok', 5000),
-(4, 'DC & SUB-DC', 28),
-(5, 'Kedai', 2577);
 
 -- --------------------------------------------------------
 
@@ -126,18 +116,18 @@ CREATE TABLE `keahlian` (
 --
 
 INSERT INTO `keahlian` (`Id`, `Koperasi`, `Pemborong`, `Peruncitan`, `ModalSyer`) VALUES
-(15, 'Kop. Perbadanan Putrajaya Berhad', 2, 1, NULL),
-(16, 'Kop. Serbaguna Anak-Anak Selangor Berhad (KOSAS)', 2, 2, 5000),
-(17, 'Kop. Al Hilal (M) Berhad', 2, 1, NULL),
-(18, 'Kop. Peserta Felcra Paloh Berhad', 2, 2, 5000),
-(19, 'Kop. Jabatan Penjara (M) Berhad', 2, 1, NULL),
-(20, 'Kop. Peserta Felda Sg Koyan 02 Berhad', 1, 1, NULL),
-(21, 'Kop. Warga Komuniti Sains Malaysia Berhad', 2, 1, NULL),
-(22, 'Kop. Tenaga Muda Hulu Besut Berhad', 2, 1, 5000),
-(23, 'Kop. Kakitangan Petronas Berhad. (KOPETRO)', 2, 1, NULL),
-(24, 'Kop. Peneroka Felda Tersang 03 Berhad', 1, 1, NULL),
-(25, 'Kop. Emas Tawau Sabah Berhad', 2, 1, NULL),
-(26, 'Kop. Permodalan Felda (M) Berhad (KPF)', 1, 1, 5000);
+(15, 'Kop. Perbadanan Putrajaya Bhd', 2, 1, NULL),
+(16, 'Kop. Serbaguna Anak-Anak Selangor Bhd (KOSAS)', 2, 2, 5000),
+(17, 'Kop. Al Hilal (M) Bhd', 2, 1, NULL),
+(18, 'Kop. Peserta Felcra Paloh Bhd', 2, 2, 5000),
+(19, 'Kop. Jabatan Penjara (M) Bhd', 2, 1, NULL),
+(20, 'Kop. Peserta Felda Sg Koyan 02 Bhd', 1, 1, NULL),
+(21, 'Kop. Warga Komuniti Sains Malaysia Bhd', 2, 1, NULL),
+(22, 'Kop. Tenaga Muda Hulu Besut Bhd', 2, 1, 5000),
+(23, 'Kop. Kakitangan Petronas Bhd. (KOPETRO)', 2, 1, NULL),
+(24, 'Kop. Peneroka Felda Tersang 03 Bhd', 1, 1, NULL),
+(25, 'Kop. Emas Tawau Sabah Bhd', 2, 1, NULL),
+(26, 'Kop. Permodalan Felda (M) Bhd (KPF)', 1, 1, 5000);
 
 -- --------------------------------------------------------
 
@@ -180,7 +170,7 @@ INSERT INTO `user` (`id`, `name`, `email`, `password`, `status`) VALUES
 (3, 'admin', 'admin@min.com', '$2y$10$GBoD2oKmJtGYc/HGoolt7.zynvcalGMN1ln04uyeeP/sbpBeRkmWy', 1),
 (4, 'kokok', 'kokok@demo.com', '$2y$10$vyrMbeOnTa6KwCZ6td2.hOoXK2JHlpCu8R/hpcJ8LEoXPVkzmu3nK', 2),
 (5, 'amsari', 'sari@demo.com', '$2y$10$STlzgLPIVgEcKTNkElexnOAnX.gjDH3Ro8UxCd18MxmMbBdZ.aAly', 2),
-(0, 'kienon', 'kienon@tfp.com', '$2y$10$V.J41rlrSXVjj/uERyot4Ofr0maOeKjk355.0uTkKhsDQVYWAQhpy', 1);
+(6, 'admin2', 'admin2@demo.com', '$2y$10$aHlivgWGRROc3wYXvZrgBebEZ23BYJBuOoCdZWOv1MXzVqSZjoZhC', 1);
 
 -- --------------------------------------------------------
 
@@ -225,6 +215,12 @@ ALTER TABLE `counter`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `jawatan`
 --
 ALTER TABLE `jawatan`
@@ -242,6 +238,13 @@ ALTER TABLE `keahlian`
 ALTER TABLE `slides`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indexes for table `website_setting`
@@ -263,7 +266,13 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `jawatan`
@@ -282,6 +291,12 @@ ALTER TABLE `keahlian`
 --
 ALTER TABLE `slides`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `website_setting`

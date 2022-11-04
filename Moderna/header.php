@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://fedskm.ddns.net/assets/img/logo/logo1.png" rel="icon">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
   <!-- Google Fonts -->
@@ -43,9 +42,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="./"><span>FedBorong</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="./"><img src="http://fedskm.ddns.net/assets/img/logo/logo1.png" alt="" class="img-fluid"><span class="text-light">FedBorong</span></a>
       </div>
     <nav id="navbar" class="navbar">
     <ul id="menu" class="menu">
