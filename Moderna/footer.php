@@ -10,7 +10,8 @@
 </div>
         <div class="col-lg-5 col-md-6 footer-info">
             <h3>Mengenai Federasi Borong</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>Federasi Koperasi Pemborongan dan Peruncitan Malaysia Berhad (FKPPMB) merupakan sebuah gabungan koperasi-koperasi di bawah Suruhanjaya Koperasi Malaysia (SKM). (FKPPMB) terlibat dalam sektor pemborongan dan peruncitan di mana Federasi ini ditubuhkan bertujuan untuk memperbaiki dan memperkukuhkan perniagaan koperasi serta meningkatkan tahap penguasaan rantaian bekalan (supply chain) koperasi bermula daripada ‘producer to end-user’. 
+            </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

@@ -124,7 +124,7 @@
                 </div>
                 
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="submit" name="login">Login</button>
+                  <br><button class="btn btn-primary w-100" type="submit" name="login">Login</button>
                 </div><br>
                 <div class="col-12">
                   <p class="small mb-0 text-center">Go back to<a href="index"> website</a></p>

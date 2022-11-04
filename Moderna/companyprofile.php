@@ -30,7 +30,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0">
             
             <p class="fst-italic">
-            Federasi Koperasi Pemborongan dan Peruncitan Malaysia Berhad (FKPPMB) merupakan Koperasi di bawah Suruhanjaya Koperasi Malaysia (SKM). (FKPPMB) merupakan sebuah gabungan koperasi-koperasi yang terlibat dalam sector pemborongan dan peruncitan di mana Federasi ini ditubuhkan bertujuan untuk memperbaiki dan memperkukuhkan perniagaan koperasi serta meningkatkan tahap penguasaan rantaian bekalan (supply chain) koperasi bermula daripada ‘producer to end-user’. 
+            Federasi Koperasi Pemborongan dan Peruncitan Malaysia Berhad (FKPPMB) merupakan Koperasi di bawah Suruhanjaya Koperasi Malaysia (SKM). (FKPPMB) merupakan sebuah gabungan koperasi-koperasi yang terlibat dalam sektor pemborongan dan peruncitan di mana Federasi ini ditubuhkan bertujuan untuk memperbaiki dan memperkukuhkan perniagaan koperasi serta meningkatkan tahap penguasaan rantaian bekalan (supply chain) koperasi bermula daripada ‘producer to end-user’. 
 Federasi ini ditubuhkan pada 1 April 2021 dan dianggotai 50 buah koperasi asas pada peringkat pemulaan penubuhannya. Federasi ingin mengsasarkan seramai 600 buah koperasi akan menganggotainya menjelang tahun 2024. 
 Pihak Federasi dapat meningkatkan tahap ekonomi anggota mereka dan selaras dengan hasrat kerajaan untuk mengurangkan kos sara hidup terutamanya golongan M40 dan B40. Dengan penguasaan rantaian bekalan (supply-chain) ini dapat membantu melaksanakan dasar serta inisiatif/program yang diperkenalkan oleh Kerajaan seperi isu kenaikan kos sara hidup, kawalan harga dan lain-lain.
 
@@ -46,8 +46,7 @@ Pihak Federasi dapat meningkatkan tahap ekonomi anggota mereka dan selaras denga
 
            <div class="section-title">
              <h2>Info</h2>
-             <p>Fungsi penubuhan dan peranan FKPPMB adalah untuk memudahcarakan & menyelaraskan koperasi anggota dari segi pembekalan, pengedaran dan sistem teknologi maklumat. Kami juga mewakili sektor pemborongan & peruncitan dalam gerakan koperasi atasan (APEX), program dalam & luar Negara dan perbincangan dengan Kerajaan. Selain itu, kami menyediakan khidmat nasihat serta latihan kepada koperasi anggota seperti akses pasaran, padanan perniagaan, mentoring & coaching serta kursus & latihan. FKPPMB menyokong kemudahan pembiayaan perniagaan kepada koperasi anggota dalam bentuk bantuan dan pinjaman.
-.</p>
+             <p>Fungsi penubuhan dan peranan FKPPMB adalah untuk memudahcarakan & menyelaraskan koperasi anggota dari segi pembekalan, pengedaran dan sistem teknologi maklumat. Kami juga mewakili sektor pemborongan & peruncitan dalam gerakan koperasi atasan (APEX), program dalam & luar Negara dan perbincangan dengan Kerajaan. Selain itu, kami menyediakan khidmat nasihat serta latihan kepada koperasi anggota seperti akses pasaran, padanan perniagaan, mentoring & coaching serta kursus & latihan. FKPPMB menyokong kemudahan pembiayaan perniagaan kepada koperasi anggota dalam bentuk bantuan dan pinjaman.</p>
            </div>
     </div>
     </section> <!-- end more info -->
@@ -64,9 +63,7 @@ Federasi dapat meningkatkan tahap penguasaan rantaian bekalan (supply-chain) di 
 
 Pihak federasi dapat mewujudkan dan mengukuhkan kuasa beli (Purchasing Power) di mana koperasi dapat membuat suatu pembelian barangan dengan kuantiti yang besar dan harga pasaran tempatan. <br><br>
 
-Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan (networking) di kalangan koperasi serta usahawan IKS tempatan memasarkan produk-produk mereka secara keseluruhan. <br><br>
-
-.</p>
+Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan (networking) di kalangan koperasi serta usahawan IKS tempatan memasarkan produk-produk mereka secara keseluruhan. <br><br></p>
            </div>
     </div>
     </section> <!-- end more info -->
@@ -113,7 +110,7 @@ Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan
           <div class="swiper-wrapper">
             <div class="testimonial-item swiper-slide">
               
-              <h3>Penawaran harga yang lebih rendah</h3>
+              <h3>Penawaran Harga yang Lebih Rendah</h3>
               
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -162,7 +159,7 @@ Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan
 
             <div class="testimonial-item swiper-slide">
               
-              <h3>Pusat kecemerlangan</h3>
+              <h3>Pusat Kecemerlangan</h3>
               
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -193,13 +190,13 @@ Melalui program ini, federasi dapat mengukuhkan hubungan (linkages) dan jaringan
           </div>
           <div class="col-md-9 ">
             <h3>PASARAN</h3>
-            <p class="fst-italic">
+            <p >
             Federasi mengsasarkan pengedaran barangan kepada semua anggota-anggota federasi yang terlibat dalam sektor pemborongan dana peruncitan (pengeluar & pembekal produk, DC, sub-DC dan outlet runcit koperasi) pada peringkat permulaan. 
 Federasi juga mengsasarkan kepada barangan IKS tempatan dan ingin pasarkan kepada seluruh anggota-anggota federasi supaya produk-produk tersebut dapat dipasarkan seluruh negara. Melalui kaedah ini, anggota-anggota federasi dapat membekalkan barangan tersebut dengan harga yang berpatutan berbanding pasaran tempatan. 
 Pihak federasi juga telah bercadang menggunapakai DC dan Sub-DC milik koperasi di seluruh Malaysia bagi tujuan mengedarkan barangan tersebut kepada pelanggan-pelanggan yang berpotensi seperti; 
 
             </p>
-            <ul>
+            <ul class="fst-italic">
               <li><i class="bi bi-check"></i> Kedai-kedai runcit sekitar pada jarak 20km radius
 </li>
               <li><i class="bi bi-check"></i> Kedai borong runcit</li>

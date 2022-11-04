@@ -45,13 +45,12 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 order-lg-1">
-            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4 order-lg-1 ">
             <div class="bg-dark">
-            <h4 class="text-center text-light">Y.H DATO' AMIR<br> HAMDAN YUSOF</h4>
-            <h6 class="text-center text-light">Pengerusi</h6>
-            </div>
-          </div>
+            <img src="assets/img/ceo/pengerusi2.png" class="img-fluid" alt="" style="object-fit:contain">
+            <h4 class="text-center text-light" >TUAN HAJI ADAM BIN KELING</h4>
+            <h6 class="text-center text-light ">Pengerusi</h6>
+          </div></div>
           <div class="col-lg-8 pt-4 pt-lg-0 order-lg-2 content d-flex align-items-stretch">
             <p class="fst-italic">
               Assalamu’alaikum Warahmatullahi Wabarakatuh​<br>

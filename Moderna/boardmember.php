@@ -30,10 +30,10 @@
 
         <div class="testimonials-carousel swiper">
           <div class="swiper-wrapper">
-            <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/pengerusi.PNG" class="testimonial-img" alt="">
-              <h3>Y.H DATO' AMIR HAMDAN YUSOF</h3>
-              <h4>Pengerusi</h4>
+          <div class="testimonial-item swiper-slide">
+              <img src="assets/img/boardm/pengerusi.png" class="testimonial-img" alt="">
+              <h3>TUAN HAJI ADAM BIN KELING</h3>
+              <h4>PENGERUSI</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 
@@ -42,9 +42,9 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/setiausaha.PNG" class="testimonial-img" alt="">
-              <h3>EN. KHALILURRAHMAN B. KAMARUZ-ZAMAN</h3>
-              <h4>Setiausaha</h4>
+              <img src="assets/img/boardm/setiausaha.png" class="testimonial-img" alt="">
+              <h3>KHALILURAHMAN KAMARUZ-ZAMAN</h3>
+              <h4>SETIAUSAHA</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 
@@ -53,9 +53,9 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/bendahari.PNG" class="testimonial-img" alt="">
-              <h3>TN. HJ. ADAM B. KELING</h3>
-              <h4>Bendahari</h4>
+              <img src="assets/img/boardm/bendahari.png" class="testimonial-img" alt="">
+              <h3>MUHAMMAD SYARULNIZAM BIN MUHAMMAD ZULKIFL</h3>
+              <h4>BENDAHARI</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 
@@ -64,8 +64,8 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK.PNG" class="testimonial-img" alt="">
-              <h3>YBhg. DATO' HJ. MD. AINI B. TAIB</h3>
+              <img src="assets/img/boardm/alk.png" class="testimonial-img" alt="">
+              <h3>DATO HAJI MD AINI BIN TAIB</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -75,8 +75,8 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK1.PNG" class="testimonial-img" alt="">
-              <h3>TN. HJ. MUSTAFFA B. SALLEH</h3>
+              <img src="assets/img/boardm/alk2.png" class="testimonial-img" alt="">
+              <h3>DATO ZAKARIA BIN ARSHAD</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -86,8 +86,8 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK2.PNG" class="testimonial-img" alt="">
-              <h3>TN. HJ. AZMI B. ISMAIL</h3>
+              <img src="assets/img/boardm/alk3.png" class="testimonial-img" alt="">
+              <h3>MOHAMAD BIN SAAD</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -97,8 +97,8 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK3.PNG" class="testimonial-img" alt="">
-              <h3>EN .MOHAMMAD B. MAT SAAD</h3>
+              <img src="assets/img/boardm/alk4.png" class="testimonial-img" alt="">
+              <h3>HAJI MUSTAFFA BIN SALLEH</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -108,19 +108,19 @@
             </div>
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK4.PNG" class="testimonial-img" alt="">
-              <h3>EN. MOHAMED SHAHRUL NIZAM B. MOHAMED ZULKIFLI</h3>
+              <img src="assets/img/boardm/alk5.png" class="testimonial-img" alt="">
+              <h3>HAJI AZMI BIN ISMAIL</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-            </div>
+            </div>  
 
             <div class="testimonial-item swiper-slide">
-              <img src="assets/img/testimonials/ALK5.PNG" class="testimonial-img" alt="">
-              <h3>EN. HASSAN B. SARKON</h3>
+              <img src="assets/img/boardm/alk6.png" class="testimonial-img" alt="">
+              <h3>HAJI HASSAN BIN SARKON</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -140,7 +140,7 @@
 
            <div class="section-title">
              <h2>Carta Organisasi</h2>
-             <img src="assets/img/testimonials/carta.PNG"  alt="">
+             <img src="assets/img/boardm/carta.png"  alt="">
            </div>
     </div>
     </section> <!-- end more info -->
