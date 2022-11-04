@@ -67,22 +67,22 @@ $query = $conn->query("SELECT image FROM slides");
             </div>
             <div class="card-body">
               
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
                      Delete
                     </button>
                      <!-- Vertically centered Modal -->
-                      <div class="modal fade" id="verticalycentered" tabindex="-1">
+                      <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete ?
+                              Are you sure want to delete <?php echo $row['image'] ?> ?
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-delete-gallery?id=" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-delete-slides?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>

@@ -76,24 +76,24 @@ require('db_connect.php');
                 ?>
                    </td>
                     <td><?php echo $row['ModalSyer'] ?></td>
-                    <td><a href="admin-member-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td><a href="admin-member-edit?id=<?php echo $row['Id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
                     <td>
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['Id'] ?>">
                      Delete
                     </button>
                      <!-- Vertically centered Modal -->
-                      <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
+                      <div class="modal fade" id="verticalycentered-<?php echo $row['Id'] ?>" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['name'] ?> ?
+                              Are you sure want to delete <?php echo $row['Koperasi'] ?> ?
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-member-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-member-delete?id=<?php echo $row['Id'] ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>

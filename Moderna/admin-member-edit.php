@@ -29,8 +29,11 @@ $row = mysqli_fetch_assoc($result);
                {
                $id=$_REQUEST['id'];
                $kopname =$_REQUEST['Koperasi'];
+               $pborong = $_POST['Pemborong'];
+               $pruncit = $_POST['Peruncitan'];
                $pmodal =$_REQUEST['ModalSyer'];
-               if(empty($pmodal)) {
+               
+               if(empty($kopname)) {
                 $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `id` = '$id';";
                } 
                 else {
@@ -49,40 +52,35 @@ $row = mysqli_fetch_assoc($result);
                 <div class="row mb-3">
                   <label for="inputName" class="col-sm-2 col-form-label">Nama Koperasi </label>
                   <div class="col-sm-10">
-                    <input type="text" name="koperasiname" class="form-control" id="inputKop" value="<?php echo $row['Koperasi'] ?>">
+                    <input type="text" name="Koperasi" class="form-control" id="inputKop" value="<?php echo $row['Koperasi'] ?>">
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="inputNumber" class="col-sm-2 col-form-label">Modal Syer</label>
-                  <div class="col-sm-10">
-                    <input type="number" name="modal" class="form-control" id="inputModal" value="<?php echo $row['ModalSyer'] ?>">
-                  </div>
-                </div>
+                
                 <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Pemborong</legend>
                   <div class="col-sm-10">
                     <?php if ($row['Pemborong']==1) { ?>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="borong" id="gridRadioborong" value="1" checked>
+                      <input class="form-check-input" type="radio" name="Pemborong" id="gridRadioborong" value="1" checked>
                       <label class="form-check-label" for="gridRadioborong">
                         Ya
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="borong2" id="gridRadioborong2" value="2">
+                      <input class="form-check-input" type="radio" name="Pemborong" id="gridRadioborong2" value="2">
                       <label class="form-check-label" for="gridRadioborong2">
                         Tidak
                       </label>
                     </div>
                     <?php }else {?>
                         <div class="form-check">
-                      <input class="form-check-input" type="radio" name="borong3" id="gridRadioborong3" value="1">
+                      <input class="form-check-input" type="radio" name="Pemborong" id="gridRadioborong3" value="1">
                       <label class="form-check-label" for="gridRadioborong3">
                         Ya
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="borong" id="gridRadioborong4" value="2" checked>
+                      <input class="form-check-input" type="radio" name="Pemborong" id="gridRadioborong4" value="2" checked>
                       <label class="form-check-label" for="gridRadioborong4">
                         Tidak
                       </label>
@@ -96,26 +94,26 @@ $row = mysqli_fetch_assoc($result);
                   <div class="col-sm-10">
                     <?php if ($row['Peruncitan']==1) { ?>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="runcit" id="gridRadioruncit" value="1" checked>
+                      <input class="form-check-input" type="radio" name="Peruncitan" id="gridRadioruncit" value="1" checked>
                       <label class="form-check-label" for="gridRadioruncit">
                         Ya
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="runcit2" id="gridRadioruncit2" value="2">
+                      <input class="form-check-input" type="radio" name="Peruncitan" id="gridRadioruncit2" value="2">
                       <label class="form-check-label" for="gridRadioruncit2">
                         Tidak
                       </label>
                     </div>
                     <?php }else {?>
                         <div class="form-check">
-                      <input class="form-check-input" type="radio" name="runcit3" id="gridRadioruncit3" value="1">
+                      <input class="form-check-input" type="radio" name="Peruncitan" id="gridRadioruncit3" value="1">
                       <label class="form-check-label" for="gridRadioruncit3">
                        Ya
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="runcit" id="gridRadioruncit4" value="2" checked>
+                      <input class="form-check-input" type="radio" name="Peruncitan" id="gridRadioruncit4" value="2" checked>
                       <label class="form-check-label" for="gridRadioruncit4">
                         Tidak
                       </label>
@@ -124,9 +122,16 @@ $row = mysqli_fetch_assoc($result);
                   </div>
                 </fieldset>
                 
+                <div class="row mb-3">
+                  <label for="inputNumber" class="col-sm-2 col-form-label">Modal Syer</label>
+                  <div class="col-sm-10">
+                    <input type="number" name="ModalSyer" class="form-control" id="inputModal" value="<?php echo $row['ModalSyer'] ?>">
+                  </div>
+                </div>
+
                 <div class="text-center">
-                  <a href="admin-view" class="btn btn-secondary">Back</a>
-                  <button type="submit" name="signup-submit" class="btn btn-primary">Submit</button>
+                  <a href="admin-membership" class="btn btn-secondary">Back</a>
+                  <button type="submit" name="member-submit" class="btn btn-primary">Submit</button>
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
               </form><!-- End Horizontal Form -->

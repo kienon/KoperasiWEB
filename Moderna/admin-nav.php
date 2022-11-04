@@ -36,7 +36,7 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6><?php echo $_SESSION['username'];  ?></h6>
-              <span>Web Designer</span>
+              <span>Admin</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -127,11 +127,22 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-membership">
-          <i class="bi bi-shop"></i>
-          <span>Keahlian</span>
+        <a class="nav-link collapsed" data-bs-target="#tables-nav2" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-people"></i><span>Keahlian</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li>
+        <ul id="tables-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="admin-member-add">
+              <i class="bi bi-circle"></i><span>Tambah Keahlian</span>
+            </a>
+          </li>
+          <li>
+            <a href="admin-membership">
+              <i class="bi bi-circle"></i><span>Senarai Keahlian</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="admin-gallery">
