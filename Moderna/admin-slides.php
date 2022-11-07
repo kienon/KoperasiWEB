@@ -84,7 +84,7 @@ $query = $conn->query("SELECT * FROM slides");
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-delete-slides?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-delete-slides?id=<?php echo $row['id']?>&name=<?php echo $row['image'] ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>
