@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 03:01 AM
+-- Generation Time: Nov 07, 2022 at 02:27 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,6 +46,16 @@ CREATE TABLE `counter` (
   `count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `counter`
+--
+
+INSERT INTO `counter` (`id`, `name`, `count`) VALUES
+(1, 'Pembekal', 100),
+(2, 'Kedai', 2577),
+(3, 'Unit Penyimpanan Stok', 5000),
+(4, 'DC & SUB-DC', 28);
+
 -- --------------------------------------------------------
 
 --
@@ -72,7 +82,8 @@ INSERT INTO `images` (`id`, `file_name`, `uploaded_on`, `status`) VALUES
 (6, 'portfolio-7.jpg', '2022-11-02 09:55:09', '1'),
 (7, 'portfolio-8.jpg', '2022-11-02 09:55:15', '1'),
 (8, 'portfolio-details-1.jpg', '2022-11-02 09:55:24', '1'),
-(9, 'portfolio-details-3.jpg', '2022-11-02 09:58:20', '1');
+(9, 'portfolio-details-3.jpg', '2022-11-02 09:58:20', '1'),
+(11, 'yor.jpg', '2022-11-04 10:52:01', '1');
 
 -- --------------------------------------------------------
 
@@ -95,7 +106,7 @@ CREATE TABLE `jawatan` (
 
 INSERT INTO `jawatan` (`id`, `job`, `overview`, `responsibilities`, `requirements`, `date`) VALUES
 (3, 'PEMBANTU JURUAUDIT GRED W19', 'Bertanggungjawab menjalankan pengauditan secara profesional, mengesahkan penyata kewangan, mengeluarkan sijil audit dan laporan berkaitannya, menyediakan laporan audit yang berkualiti, timely dan seimbang, menguruskan aktiviti pengauditan dengan cekap dan berkesan serta memberi khidmat nasihat, memenuhi keperluan dan harapan stakeholders.\r\nLPPKN bertanggungjawab dalam menasihati Kerajaan mengenai perkara-perkara berkaitan dasar dan program kependudukan, pembangunan keluarga dan reproduksi manusia.', 'LPPKN juga bertanggungjawab dalam merancang, melaksana dan menyelaras program dan aktiviti kependudukan, pembangunan keluarga dan reproduksi manusia disamping menyebar pengetahuan, memberi didikan dan menggalakkan tingkah laku positif dalam bidang kependudukan, pembangunan keluarga dan reproduksi manusia.\r\nSPM / O Level / SKM Level 1 / SKM Level 2 / SKM Level 3 or Equivalent', '1. Calon bagi lantikan hendaklah memiliki kelayakan seperti berikut:\r\n\r\n(a) warganegara Malaysia;\r\n(b) berumur tidak kurang dari 18 tahun pada tarikh tutup iklan jawatan; dan\r\n(c) (i) Sijil Pelajaran Malaysia atau kelayakan yang diiktiraf setaraf dengannya oleh\r\nKerajaan serta Kepujian dalam subjek Matematik pada peringkat peperiksaan\r\ntersebut; (Gaji permulaan ialah pada Gred W19:1,353.00); atau\r\n(ii) Sijil Pelajaran Malaysia atau kelayakan yang diiktiraf setaraf dengannya oleh\r\nKerajaan serta Sijil Perdagangan Malaysia peringkat Pertengahan (Simpan Kira-\r\nkira) atau kelayakan yang diiktiraf setaraf dengannya. (Gaji permulaan ialah pada\r\nGred W19:1,409.40); atau\r\n(iii) Sijil Pelajaran Malaysia atau kelayakan yang diiktiraf setaraf dengannya oleh\r\nKerajaan serta Sijil Kemahiran Malaysia Tahap 2 dalam bidang berkaitan atau\r\nkelayakan yang diiktiraf setaraf dengannya. (Gaji permulaan ialah pada Gred\r\nW19: 1,409.40); atau\r\n(iv) Sijil Pelajaran Malaysia atau kelayakan yang diiktiraf setaraf dengannya oleh\r\nKerajaan serta Sijil Perdagangan Malaysia peringkat Tertinggi (Perakaunan) atau\r\nkelayakan yang diiktiraf setaraf dengannya. (Gaji permulaan ialah pada Gred', '2022-12-08'),
-(4, 'Sales Associate', ' Jualan harian Job Requirement: Degree Holder Job Description: jual-jual bina hubungan bisnes kepada bisnes', 'Degree Holder', 'jual-jual menjalin hubungan bisnes kepada bisnes', '2022-12-16');
+(4, 'Sales Associate', ' Jualan harian Job Requirement: Degree Holder Job Description: jual-jual bina hubungan bisnes kepada bisnes', 'jual-jual menjalin hubungan bisnes kepada bisnes', 'Degree Holder', '2022-12-16');
 
 -- --------------------------------------------------------
 
@@ -116,18 +127,18 @@ CREATE TABLE `keahlian` (
 --
 
 INSERT INTO `keahlian` (`Id`, `Koperasi`, `Pemborong`, `Peruncitan`, `ModalSyer`) VALUES
-(15, 'Kop. Perbadanan Putrajaya Bhd', 2, 1, NULL),
-(16, 'Kop. Serbaguna Anak-Anak Selangor Bhd (KOSAS)', 2, 2, 5000),
-(17, 'Kop. Al Hilal (M) Bhd', 2, 1, NULL),
-(18, 'Kop. Peserta Felcra Paloh Bhd', 2, 2, 5000),
-(19, 'Kop. Jabatan Penjara (M) Bhd', 2, 1, NULL),
-(20, 'Kop. Peserta Felda Sg Koyan 02 Bhd', 1, 1, NULL),
-(21, 'Kop. Warga Komuniti Sains Malaysia Bhd', 2, 1, NULL),
-(22, 'Kop. Tenaga Muda Hulu Besut Bhd', 2, 1, 5000),
-(23, 'Kop. Kakitangan Petronas Bhd. (KOPETRO)', 2, 1, NULL),
-(24, 'Kop. Peneroka Felda Tersang 03 Bhd', 1, 1, NULL),
-(25, 'Kop. Emas Tawau Sabah Bhd', 2, 1, NULL),
-(26, 'Kop. Permodalan Felda (M) Bhd (KPF)', 1, 1, 5000);
+(16, 'Kop. Serbaguna Anak-Anak Selangor Berhad (KOSAS)', 2, 2, 5000),
+(17, 'Kop. Al Hilal (M) Berhad', 2, 1, NULL),
+(18, 'Kop. Peserta Felcra Paloh Berhad', 2, 2, 5000),
+(19, 'Kop. Jabatan Penjara (M) Berhad', 2, 1, NULL),
+(20, 'Kop. Peserta Felda Sg Koyan 02 Berhad', 1, 1, NULL),
+(21, 'Kop. Warga Komuniti Sains Malaysia Berhad', 2, 1, NULL),
+(22, 'Kop. Tenaga Muda Hulu Besut Berhad', 2, 1, 5000),
+(23, 'Kop. Kakitangan Petronas Berhad. (KOPETRO)', 2, 1, NULL),
+(24, 'Kop. Peneroka Felda Tersang 03 Berhad', 1, 1, NULL),
+(25, 'Kop. Emas Tawau Sabah Berhad', 2, 1, NULL),
+(26, 'Kop. Permodalan Felda (M) Berhad (KPF)', 1, 1, 5000),
+(27, 'Kop. Perbadanan Putrajaya Berhad', 2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -145,8 +156,9 @@ CREATE TABLE `slides` (
 --
 
 INSERT INTO `slides` (`id`, `image`) VALUES
-(4, 'images/hero-bg.jpg'),
-(5, 'images/team.jpg');
+(6, 'images/esmonde-yong--9B08uduMyY-unsplash.jpg'),
+(7, 'images/hero-bg.jpg'),
+(8, 'images/image 1.png');
 
 -- --------------------------------------------------------
 
@@ -170,7 +182,7 @@ INSERT INTO `user` (`id`, `name`, `email`, `password`, `status`) VALUES
 (3, 'admin', 'admin@min.com', '$2y$10$GBoD2oKmJtGYc/HGoolt7.zynvcalGMN1ln04uyeeP/sbpBeRkmWy', 1),
 (4, 'kokok', 'kokok@demo.com', '$2y$10$vyrMbeOnTa6KwCZ6td2.hOoXK2JHlpCu8R/hpcJ8LEoXPVkzmu3nK', 2),
 (5, 'amsari', 'sari@demo.com', '$2y$10$STlzgLPIVgEcKTNkElexnOAnX.gjDH3Ro8UxCd18MxmMbBdZ.aAly', 2),
-(6, 'admin2', 'admin2@demo.com', '$2y$10$aHlivgWGRROc3wYXvZrgBebEZ23BYJBuOoCdZWOv1MXzVqSZjoZhC', 1);
+(0, 'kienon', 'kienon@tfp.com', '$2y$10$V.J41rlrSXVjj/uERyot4Ofr0maOeKjk355.0uTkKhsDQVYWAQhpy', 1);
 
 -- --------------------------------------------------------
 
@@ -240,13 +252,6 @@ ALTER TABLE `slides`
   ADD UNIQUE KEY `id` (`id`);
 
 --
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
 -- Indexes for table `website_setting`
 --
 ALTER TABLE `website_setting`
@@ -266,13 +271,13 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `jawatan`
@@ -284,19 +289,13 @@ ALTER TABLE `jawatan`
 -- AUTO_INCREMENT for table `keahlian`
 --
 ALTER TABLE `keahlian`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `slides`
 --
 ALTER TABLE `slides`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `website_setting`
