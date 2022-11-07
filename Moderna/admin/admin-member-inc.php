@@ -16,7 +16,8 @@ if(isset($_POST['member-submit'])) {
     if (empty($kopname) || empty($pborong) || empty($pruncit) || empty($pmodal)) {
         header("Location: ../admin-member-add?error=empty_fields&Koperasi=".$kopname);
         exit();
-    } else if{
+    } 
+     else{
         $sql = "SELECT Koperasi FROM keahlian WHERE Koperasi=?";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)) {
