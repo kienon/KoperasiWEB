@@ -36,7 +36,9 @@ $row = mysqli_fetch_assoc($result);
                if(empty($kopname)) {
                 $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `Id` = '$id';";
                } 
-                else {
+                elseif(empty($pmodal)) {
+                $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = NULL WHERE `Id` = '$id';";
+               } else {
                 $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `Id` = '$id';";
                }
                mysqli_query($conn, $update) or die(mysqli_error());

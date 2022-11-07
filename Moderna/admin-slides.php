@@ -2,9 +2,11 @@
 <?php
     if(isset($_SESSION['username'])) {
 ?>
-<?php include 'admin/admin-header.php'?>
+<?php 
+include 'admin/admin-header.php';
+include 'db_connect.php';
+?>
 <?php
-$conn = new mysqli("localhost", "root","","federasi");
 
 $msg = "";
 
@@ -21,7 +23,7 @@ if($sql){
 }
 }
 //getimagefromdatabase
-$query = $conn->query("SELECT image FROM slides");
+$query = $conn->query("SELECT * FROM slides");
 
 ?>
 <body>
@@ -67,18 +69,18 @@ $query = $conn->query("SELECT image FROM slides");
             </div>
             <div class="card-body">
               
-            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
+            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row["id"]?>">
                      Delete
                     </button>
                      <!-- Vertically centered Modal -->
-                      <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
+                      <div class="modal fade" id="verticalycentered-<?php echo $row["id"]?>" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['image'] ?> ?
+                              Are you sure want to delete <?php echo $row['image']?> ?
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
