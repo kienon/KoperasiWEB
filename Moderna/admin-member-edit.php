@@ -6,7 +6,7 @@
 include 'admin/admin-header.php';
 require('db_connect.php');
 $id=$_REQUEST['id'];
-$query = "SELECT * from keahlian where id='".$id."'"; 
+$query = "SELECT * from keahlian where Id='".$id."'"; 
 $result = mysqli_query($conn, $query) or die ( mysqli_error());
 $row = mysqli_fetch_assoc($result);
 ?>
@@ -34,10 +34,10 @@ $row = mysqli_fetch_assoc($result);
                $pmodal =$_REQUEST['ModalSyer'];
                
                if(empty($kopname)) {
-                $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `id` = '$id';";
+                $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `Id` = '$id';";
                } 
                 else {
-                $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `id` = '$id';";
+                $update="UPDATE `keahlian` SET `Koperasi` = '$kopname', `Pemborong` = '$pborong', `Peruncitan` = '$pruncit', `ModalSyer` = '$pmodal' WHERE `Id` = '$id';";
                }
                mysqli_query($conn, $update) or die(mysqli_error());
                $status = "Record Updated Successfully. </br></br>
@@ -48,7 +48,7 @@ $row = mysqli_fetch_assoc($result);
               <!-- Horizontal Form -->
               <form action="" method="POST">
               <input type="hidden" name="new" value="1" />
-              <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
+              <input name="Id" type="hidden" value="<?php echo $row['Id'];?>" />
                 <div class="row mb-3">
                   <label for="inputName" class="col-sm-2 col-form-label">Nama Koperasi </label>
                   <div class="col-sm-10">
