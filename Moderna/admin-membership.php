@@ -19,12 +19,12 @@ require('db_connect.php');
 
     <section class="section">
       <div class="row">
-      <div class="card">
+      <div class="card card-outline card-primary">
             <div class="card-body">
               <h5 class="card-title"></h5>
 
               <!-- Default Table -->
-              <table class="table">
+              <table class="table tabe-hover table-bordered" id="list">
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
@@ -121,3 +121,11 @@ require('db_connect.php');
         exit();
     }
  ?>  
+
+
+<script>
+	$(document).ready(function () {
+    $('#list').DataTable();
+});
+
+</script>

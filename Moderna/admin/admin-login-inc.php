@@ -1,4 +1,13 @@
+<?PHP
+    session_start();
+
+    if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+
+        header ("Location: admin-login");
+    }
+?>
 <?php
+
 
 if(isset($_POST['login'])) {
     require '../db_connect.php';

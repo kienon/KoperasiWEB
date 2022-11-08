@@ -9,6 +9,10 @@
     <script src="admin-assets/vendor/quill/quill.min.js"></script>
     <script src="admin-assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="admin-assets/vendor/tinymce/tinymce.min.js"></script>
+      <!--JQUERY 3.5.1-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
   
     <!-- Template Main JS File -->
     <script src="admin-assets/js/main.js"></script>

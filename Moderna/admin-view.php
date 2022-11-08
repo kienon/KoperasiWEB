@@ -24,7 +24,7 @@ require('db_connect.php');
               <h5 class="card-title"></h5>
 
               <!-- Default Table -->
-              <table class="table">
+              <table class="table ">
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
@@ -89,3 +89,4 @@ require('db_connect.php');
         exit();
     }
  ?>  
+ 
