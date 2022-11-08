@@ -14,12 +14,6 @@ include 'db_connect.php';
 
     <div class="pagetitle">
       <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
@@ -88,6 +82,29 @@ include 'db_connect.php';
                     </div>
                     <div class="ps-3">
                       <h6><?php echo $conn->query("SELECT * FROM images")->num_rows ?></h6>
+                      <span class="text-success small pt-1 fw-bold"></span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End Sales Card -->
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Keahlian total</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-shop"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6><?php echo $conn->query("SELECT * FROM keahlian")->num_rows ?></h6>
                       <span class="text-success small pt-1 fw-bold"></span>
 
                     </div>
