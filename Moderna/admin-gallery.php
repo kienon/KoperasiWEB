@@ -87,7 +87,7 @@ $query = $conn->query("SELECT * FROM images ORDER BY uploaded_on DESC");
  <?php include 'admin/admin-footer.php' ?>
 <?php 
     } else {
-        header("Location: ../Moderna/admin-login?error=login_first");
+        header("Location: ./admin-login?error=login_first");
         exit();
     }
  ?>  

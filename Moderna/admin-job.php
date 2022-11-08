@@ -9,12 +9,12 @@ require('db_connect.php');
 
 ?>
 <body>
-
 <?php include 'admin-nav.php';?>
+
   <main id="main" class="main">
    
   <div class="pagetitle">
-      <h1>Counter Lists</h1>
+      <h1>Admin Jobs</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
@@ -24,12 +24,15 @@ require('db_connect.php');
               <h5 class="card-title"></h5>
 
               <!-- Default Table -->
-              <table class="table">
+              <table class="table ">
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Count Value</th>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Job Overview</th>
+                    <th scope="col">Responsibilities</th>
+                    <th scope="col">Requirements</th>
+                    <th scope="col">Deadline</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
                   </tr>
@@ -37,14 +40,17 @@ require('db_connect.php');
                 <tbody>
                   <?php
                   $count=1;
-                  $sel_query="Select * from counter ORDER BY id desc;";
+                  $sel_query="Select * from jawatan ORDER BY id desc;";
                   $result = mysqli_query($conn,$sel_query);
                   while($row = mysqli_fetch_assoc($result)) { ?> 
                   <tr>
                     <td><?php echo $count; ?></td>
-                    <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['count'] ?></td>
-                    <td><a href="admin-counter-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td><?php echo $row['job'] ?></td>
+                    <td><?php echo $row['overview'] ?></td>
+                    <td><?php echo $row['responsibilities'] ?></td>
+                    <td><?php echo $row['requirements'] ?></td>
+                    <td><?php echo $row['date'] ?></td>
+                    <td><a href="admin-job-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
                     <td>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
                      Delete
@@ -54,14 +60,14 @@ require('db_connect.php');
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-bs-dismiss="job" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['name'] ?> ?
+                              Are you sure want to delete <?php echo $row['job'] ?> ?
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-counter-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <a href="admin/admin-job-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
                             </div>
                           </div>
                         </div>
@@ -75,8 +81,6 @@ require('db_connect.php');
             </div>
           </div>
       </div>
-
-      
     </section>
 
   </main>
@@ -91,3 +95,4 @@ require('db_connect.php');
         exit();
     }
  ?>  
+ 

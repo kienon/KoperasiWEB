@@ -51,7 +51,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="admin-index">
+        <a class="nav-link collapsed" href="admin-index">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
