@@ -1,6 +1,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
+  <?php 
+     $conn= new mysqli('localhost','root','','federasi')or die("Could not connect to mysql".mysqli_error($con));
+     $id = $_SESSION['username'];
+     $user = "SELECT * FROM user WHERE name = '$id'";
+     $row = mysqli_fetch_assoc($conn->query($user) );
+  ?>
   <div class="d-flex align-items-center justify-content-between">
       <a href="admin-index" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">FEDBORONG ADMIN</span>
@@ -16,7 +21,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $_SESSION['username'];  ?></span>
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $row['name'];  ?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -56,7 +61,7 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
+      <?php if ($row['status'] == 1) { ?>
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-people"></i><span>Manage Admin</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -74,7 +79,9 @@
           </li>
         </ul>
       </li><!-- End Tables Nav -->
+      <?php } else { ?>
 
+      <?php }?>
       <li class="nav-item">
         <a class="nav-link collapsed" href="admin-slides">
           <i class="bi bi-file-slides"></i>
