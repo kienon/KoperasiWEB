@@ -1,4 +1,14 @@
+<?PHP
+require './db_connect.php';
+    session_start();
 
+    if (isset($_SESSION['username'])) {
+
+        header ("Location: ./admin-index");
+    } else {
+      
+  
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -142,3 +152,7 @@
 
 <?php include 'admin-footer.php' ?>
 </html>
+<?php
+    exit();
+  }
+?> 
