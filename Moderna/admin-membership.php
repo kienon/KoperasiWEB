@@ -14,7 +14,7 @@ require('db_connect.php');
   <main id="main" class="main">
    
   <div class="pagetitle">
-      <h1>Keahlian Lists</h1>
+      <h1>Senarai Keahlian</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
@@ -27,13 +27,13 @@ require('db_connect.php');
               <table class="table tabe-hover table-bordered" id="list">
                 <thead>
                   <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Koperasi Name</th>
+                    <th scope="col">Bil</th>
+                    <th scope="col">Nama Koperasi</th>
                     <th scope="col">Pemborong</th>
                     <th scope="col">Peruncit</th>
                     <th scope="col">ModalSyer</th>
                     <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col">Padam</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -79,7 +79,7 @@ require('db_connect.php');
                     <td><a href="admin-member-edit?id=<?php echo $row['Id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
                     <td>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['Id'] ?>">
-                     Delete
+                     Padam
                     </button>
                      <!-- Vertically centered Modal -->
                       <div class="modal fade" id="verticalycentered-<?php echo $row['Id'] ?>" tabindex="-1">
@@ -89,11 +89,11 @@ require('db_connect.php');
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['Koperasi'] ?> ?
+                              Adakah anda yakin memadam <b><?php echo $row['Koperasi'] ?></b> ?
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-member-delete?id=<?php echo $row['Id'] ?>" class="btn btn-danger">Confirm</a>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                              <a href="admin/admin-member-delete?id=<?php echo $row['Id'] ?>" class="btn btn-danger">Ya</a>
                             </div>
                           </div>
                         </div>

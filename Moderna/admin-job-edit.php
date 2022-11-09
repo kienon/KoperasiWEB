@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($result);
 <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Edit Details</h1>
+      <h1>Edit Jawatan</h1>
     </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
@@ -50,35 +50,35 @@ $row = mysqli_fetch_assoc($result);
               <input type="hidden" name="new" value="1" />
               <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
                 <div class="row mb-3">
-                  <label for="inputTitle3" class="col-sm-2 col-form-label">Job Title</label>
+                  <label for="inputTitle3" class="col-sm-2 col-form-label">Jawatan</label>
                   <div class="col-sm-10">
                     <input type="text" name="job" class="form-control" id="inputText" value="<?php echo $row['job'] ?>">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputOview" class="col-sm-2 col-form-label">Job Overview</label>
+                  <label for="inputOview" class="col-sm-2 col-form-label">Gambaran Keseluruhan Kerja</label>
                   <div class="col-sm-10">
                     <input type="text" name="overview" class="form-control" id="inputText2" value="<?php echo $row['overview'] ?>">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputResp" class="col-sm-2 col-form-label">Responsibilities</label>
+                  <label for="inputResp" class="col-sm-2 col-form-label">Tanggungjawab</label>
                   <div class="col-sm-10">
                     <input type="text" name="responsibilities" class="form-control" id="inputText3" value="<?php echo $row['responsibilities'] ?>">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputRequire" class="col-sm-2 col-form-label">Requirements</label>
+                  <label for="inputRequire" class="col-sm-2 col-form-label">Syarat Permohonan</label>
                   <div class="col-sm-10">
                     <input type="text" name="requirements" class="form-control" id="inputText4" value="<?php echo $row['requirements'] ?>">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputDate" class="col-sm-2 col-form-label">Deadline</label>
+                  <label for="inputDate" class="col-sm-2 col-form-label">Tarikh Luput</label>
                   <div class="col-sm-10">
                     <input type="date" name="date" class="form-control" id="inputDate" value="<?php echo $row['date'] ?>">
                   </div>
@@ -86,8 +86,8 @@ $row = mysqli_fetch_assoc($result);
     
                 
                 <div class="text-center">
-                  <a href="admin-job" class="btn btn-secondary">Back</a>
-                  <button type="submit" name="job-submit" class="btn btn-primary">Submit</button>
+                  <a href="admin-job" class="btn btn-secondary">Kembali</a>
+                  <button type="submit" name="job-submit" class="btn btn-primary">Hantar</button>
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
               </form><!-- End Horizontal Form -->

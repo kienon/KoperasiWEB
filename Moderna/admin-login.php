@@ -94,14 +94,11 @@ require './db_connect.php';
   
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
       <div class="row gx-lg-5 align-items-center mb-5">
+        
+      
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-            FED <br />
-            <span style="color: hsl(218, 81%, 75%)">BORONG</span>
-          </h1>
-          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-           
-          </p>
+        <img src="http://fedskm.ddns.net/admin-assets/img/logofull.png" alt="" class="" style="width:300px; height:200px;">
+        
         </div>
   
         <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
@@ -113,32 +110,32 @@ require './db_connect.php';
             <div class="card-body">
 
               <div class="pt-4 pb-2">
-                <h5 class="card-title text-center pb-0 fs-4">Login to Admin Account</h5>
+                <h5 class="card-title text-center pb-0 fs-4"></h5>
                 
               </div>
 
               <form action="admin/admin-login-inc" method="POST">
 
                 <div class="col-12">
-                  <label for="yourUsername" class="form-label">Username</label>
+                  <label for="yourUsername" class="form-label">Nama Pengguna</label>
                   <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="text" name="mailuid" class="form-control" id="yourUsername" required>
-                    <div class="invalid-feedback">Please enter your username.</div>
+                    <div class="invalid-feedback">Sila masukkan nama pengguna anda.</div>
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <label for="yourPassword" class="form-label">Password</label>
+                  <label for="yourPassword" class="form-label">Kata Laluan</label>
                   <input type="password" name="pwd" class="form-control" id="yourPassword" required>
-                  <div class="invalid-feedback">Please enter your password!</div>
+                  <div class="invalid-feedback">Sila masukkan kata laluan!</div>
                 </div>
                 
                 <div class="col-12">
-                  <br><button class="btn btn-primary w-100" type="submit" name="login">Login</button>
+                  <br><button class="btn btn-primary w-100" type="submit" name="login">Log Masuk</button>
                 </div><br>
                 <div class="col-12">
-                  <p class="small mb-0 text-center">Go back to<a href="index"> website</a></p>
+                  <p class="small mb-0 text-center">Kembali ke <a href="index"> Laman Utama</a></p>
                 </div>
               </form>
 

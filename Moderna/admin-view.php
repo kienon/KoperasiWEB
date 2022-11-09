@@ -14,7 +14,7 @@ require('db_connect.php');
   <main id="main" class="main">
    
   <div class="pagetitle">
-      <h1>Admin Lists</h1>
+      <h1>Senarai Pentadbir</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
@@ -27,11 +27,11 @@ require('db_connect.php');
               <table class="table ">
                 <thead>
                   <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Bil</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Emel</th>
                     <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col">Padam</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -47,7 +47,7 @@ require('db_connect.php');
                     <td><a href="admin-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
                     <td>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
-                     Delete
+                     Padam
                     </button>
                      <!-- Vertically centered Modal -->
                       <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
@@ -57,11 +57,11 @@ require('db_connect.php');
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Are you sure want to delete <?php echo $row['name'] ?> ?
+                            Adakah anda yakin memadam <b><?php echo $row['name'] ?></b> ?
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                              <a href="admin/admin-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Confirm</a>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                              <a href="admin/admin-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Ya</a>
                             </div>
                           </div>
                         </div>

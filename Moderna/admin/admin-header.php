@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="admin-assets/img/favicon.png" rel="icon">
-  <link href="admin-assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="http://fedskm.ddns.net/admin-assets/img/logo1.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">

@@ -12,7 +12,7 @@
     
     <section class="section">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
 
           <div class="card">
             <div class="card-body">
@@ -21,28 +21,28 @@
               <!-- Horizontal Form -->
               <form action="admin/admin-job-inc" method="POST">
                 <div class="row mb-3">
-                  <label for="inputTitle" class="col-sm-2 col-form-label">Job Title </label>
+                  <label for="inputTitle" class="col-sm-2 col-form-label">Nama Jawatan</label>
                   <div class="col-sm-10">
                     <input type="text" name="job" class="form-control" id="inputText">
                   </div>
                 </div>
                 
                 <div class="row mb-3">
-                  <label for="inputOview" class="col-sm-2 col-form-label">Job Overview </label>
+                  <label for="inputOview" class="col-sm-2 col-form-label">Gambaran Keseluruhan Kerja</label>
                   <div class="col-sm-10">
                     <input type="text" name="overview" class="form-control" id="inputText">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputResp" class="col-sm-2 col-form-label">Responsibilities </label>
+                  <label for="inputResp" class="col-sm-2 col-form-label">Tanggungjawab </label>
                   <div class="col-sm-10">
                     <input type="text" name="responsibilities" class="form-control" id="inputText">
                   </div>
                 </div>
 
                 <div class="row mb-3">
-                  <label for="inputReqm" class="col-sm-2 col-form-label">Requirements </label>
+                  <label for="inputReqm" class="col-sm-2 col-form-label">Syarat Permohonan </label>
                   <div class="col-sm-10">
                     <input type="text" name="requirements" class="form-control" id="inputText">
                   </div>
@@ -50,14 +50,14 @@
                 
                 
                 <div class="row mb-3">
-                  <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
+                  <label for="inputDate" class="col-sm-2 col-form-label">Tarikh Luput</label>
                   <div class="col-sm-10">
                     <input type="date" name="date" class="form-control" id="inputDate">
                   </div>
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" name="job-submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" name="job-submit" class="btn btn-primary">Hantar</button>
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
               </form><!-- End Horizontal Form -->

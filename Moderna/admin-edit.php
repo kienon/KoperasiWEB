@@ -17,7 +17,7 @@ $row = mysqli_fetch_assoc($result);
 <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Edit Details</h1>
+      <h1>Edit Pentadbir</h1>
     </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
@@ -50,19 +50,19 @@ $row = mysqli_fetch_assoc($result);
               <input type="hidden" name="new" value="1" />
               <input name="id" type="hidden" value="<?php echo $row['id'];?>" />
                 <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                   <div class="col-sm-10">
                     <input type="text" name="uid" class="form-control" id="inputText" value="<?php echo $row['name'] ?>">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Emel</label>
                   <div class="col-sm-10">
                     <input type="email" name="mail" class="form-control" id="inputEmail" value="<?php echo $row['email'] ?>">
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label">New Password (leave blank if not change)</label>
+                  <label class="col-sm-2 col-form-label">Kata Laluan Baharu (Silah kosongkan kalau tiada perubahan)</label>
                   <div class="col-sm-10">
                     <input type="password" name="pwd" class="form-control">
                   </div>
@@ -74,26 +74,26 @@ $row = mysqli_fetch_assoc($result);
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="admin" id="gridRadios1" value="2" checked>
                       <label class="form-check-label" for="gridRadios1">
-                        ordinary admin
+                        Pentadbir
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="admin" id="gridRadios2" value="1">
                       <label class="form-check-label" for="gridRadios2">
-                        priviledge admin
+                        Pentadbir Utama
                       </label>
                     </div>
                     <?php }else {?>
                         <div class="form-check">
                       <input class="form-check-input" type="radio" name="admin" id="gridRadios1" value="2">
                       <label class="form-check-label" for="gridRadios1">
-                        ordinary admin
+                        Pentadbir
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="admin" id="gridRadios2" value="1" checked>
                       <label class="form-check-label" for="gridRadios2">
-                        priviledge admin
+                        Pentadbir Utama
                       </label>
                     </div>
                     <?php } ?>   
@@ -101,8 +101,8 @@ $row = mysqli_fetch_assoc($result);
                 </fieldset>
                 
                 <div class="text-center">
-                  <a href="admin-view" class="btn btn-secondary">Back</a>
-                  <button type="submit" name="signup-submit" class="btn btn-primary">Submit</button>
+                  <a href="admin-view" class="btn btn-secondary">Kembali</a>
+                  <button type="submit" name="signup-submit" class="btn btn-primary">Hantar</button>
                   <!--<button onclick="history.back()" class="btn btn-secondary">Back</button>-->
                 </div>
               </form><!-- End Horizontal Form -->
