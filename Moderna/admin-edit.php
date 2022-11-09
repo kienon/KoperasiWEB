@@ -32,12 +32,13 @@ $row = mysqli_fetch_assoc($result);
                $name =$_REQUEST['uid'];
                $email =$_REQUEST['mail'];
                $pwd =$_REQUEST['pwd'];
+			   $hashpwd = password_hash($pwd, PASSWORD_DEFAULT);
                if(empty($pwd)) {
                 $update="UPDATE `user` SET `name` = '$name', `email` = '$email' WHERE `id` = '$id';";
                } 
                 else {
                 $hashpwd = password_hash($pwd, PASSWORD_DEFAULT);
-                $update="UPDATE `user` SET `name` = '$name', `email` = '$email', `password` = '$pwd' WHERE `id` = '$id';";
+                $update="UPDATE `user` SET `name` = '$name', `email` = '$email', `password` = '$hashpwd' WHERE `id` = '$id';";
                }
                mysqli_query($conn, $update) or die(mysqli_error());
                $status = "Record Updated Successfully. </br></br>

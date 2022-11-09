@@ -231,7 +231,7 @@ $result = mysqli_query($conn,"SELECT * FROM counter");
   <?php include 'footer.php' ?>
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript">
+<script type="text/javascript">
         function sendEmail() {
             var name = $("#name");
             var email = $("#email");

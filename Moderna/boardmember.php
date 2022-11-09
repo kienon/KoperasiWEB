@@ -54,7 +54,7 @@
 
             <div class="testimonial-item swiper-slide">
               <img src="assets/img/boardm/bendahari.png" class="testimonial-img" alt="">
-              <h3>MUHAMMAD SYARULNIZAM BIN MUHAMMAD ZULKIFL</h3>
+              <h3>MUHAMMAD SYARULNIZAM BIN MUHAMMAD ZULKIFLI</h3>
               <h4>BENDAHARI</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -120,7 +120,7 @@
 
             <div class="testimonial-item swiper-slide">
               <img src="assets/img/boardm/alk6.png" class="testimonial-img" alt="">
-              <h3>HAJI HASSAN BIN SARKON</h3>
+              <h3>HAJI HASSAN BIN SARKOM</h3>
               <h4>ALK</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>

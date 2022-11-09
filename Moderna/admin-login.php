@@ -16,13 +16,12 @@ require './db_connect.php';
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Admin Login</title>
+  <title>Log Masuk</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="admin-assets/img/favicon.png" rel="icon">
-  <link href="admin-assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fedborong.com.my/admin-assets/img/logo1.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -97,7 +96,7 @@ require './db_connect.php';
         
       
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-        <img src="http://fedskm.ddns.net/admin-assets/img/logofull.png" alt="" class="" style="width:300px; height:200px;">
+        <img src="https://fedborong.com.my/admin-assets/img/logofull.png" alt="" class="" style="width:300px; height:200px;">
         
         </div>
   
@@ -110,7 +109,7 @@ require './db_connect.php';
             <div class="card-body">
 
               <div class="pt-4 pb-2">
-                <h5 class="card-title text-center pb-0 fs-4"></h5>
+                <h5 class="card-title text-center pb-0 fs-4">STAF FEDBORONG</h5>
                 
               </div>
 

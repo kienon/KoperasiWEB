@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="http://fedskm.ddns.net/admin-assets/img/logo1.png" rel="icon">
+  <link href="https://fedborong.com.my/admin-assets/img/logo1.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">

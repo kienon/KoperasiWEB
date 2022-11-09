@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="http://fedskm.ddns.net/assets/img/logo/logo1.png" rel="icon">
+  <link href="https://fedborong.com.my//assets/img/logo/logo1.png" rel="icon">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
   <!-- Google Fonts -->
@@ -42,12 +42,12 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <a href="./"><img src="http://fedskm.ddns.net/assets/img/logo/logo1.png" alt="" class="img-fluid"><span class="text-light">FedBorong</span></a>
+        <a href="./"><img src="https://fedborong.com.my//assets/img/logo/logo1.png" alt="" class="img-fluid"><span class="text-light">FedBorong</span></a>
       </div>
     <nav id="navbar" class="navbar">
     <ul id="menu" class="menu">
         <li class="nav-item">
-            <a href="http://fedskm.ddns.net" class=" active<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
+            <a href="https://fedborong.com.my/" class=" active<?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
                 echo "active";}
                 else{
                     echo "";

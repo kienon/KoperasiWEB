@@ -31,7 +31,6 @@ require('db_connect.php');
                     <th scope="col">Nama Perkhidmatan</th>
                     <th scope="col">Jumlah</th>
                     <th scope="col">Edit</th>
-                    <th scope="col">Padam</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -45,28 +44,6 @@ require('db_connect.php');
                     <td><?php echo $row['name'] ?></td>
                     <td><?php echo $row['count'] ?></td>
                     <td><a href="admin-counter-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td>
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
-                     Padam
-                    </button>
-                     <!-- Vertically centered Modal -->
-                      <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                             Adakah anda yakin memadam <b><?php echo $row['name'] ?></b> ?
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                              <a href="admin/admin-counter-delete?id=<?php echo $row['id'] ?>" class="btn btn-danger">Ya</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!-- End Vertically centered Modal-->
-                    </td>
                   </tr>
                   <?php $count++; } ?>
                 </tbody>

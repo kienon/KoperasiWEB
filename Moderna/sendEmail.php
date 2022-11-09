@@ -25,7 +25,7 @@
         //Email Settings
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("ahmad.amsari@tfp.com.my"); //enter you email address
+        $mail->addAddress("contact@fedborong.com.my"); //reciever email address
         $mail->Subject = ( "$subject");
         $mail->Body = ("$body");
 

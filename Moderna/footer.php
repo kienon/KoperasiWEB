@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
         <div class="col-lg-3 col-md-6 footer-info">
         <div class="logo">
-        <a><img src="http://fedskm.ddns.net/assets/img/logo/logofull.png" alt="" class="img-fluid" style="width:200px; height:130px;"></a>
+        <a><img src="https://fedborong.com.my//assets/img/logo/logofull.png" alt="" class="img-fluid" style="width:200px; height:130px;"></a>
       </div>
 </div>
         <div class="col-lg-5 col-md-6 footer-info">
