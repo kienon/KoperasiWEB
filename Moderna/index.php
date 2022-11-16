@@ -38,18 +38,19 @@
 
        <!--Kata aluan Pengerusi-->
       <section id="kata" class="">
-      <div class="container">
+      <div class="container ">
 
         <div class="section-title">
         <h2 >Kata Aluan Pengerusi</h2>
         </div>
 
-        <div class="row">
+        <div class="row d-flex text-center">
           <div class="col-lg-4 order-lg-1 ">
-            <div class="bg-dark">
-            <img src="assets/img/ceo/pengerusi1.png" class="img-fluid" alt="" style="object-fit:contain">
-            <h4 class="text-center text-light" >TUAN HAJI ADAM BIN KELING</h4>
-            <h6 class="text-center text-light ">Pengerusi</h6>
+            <div class="bg-white">
+				<figure>
+            <img src="assets/img/ceo/pengerusi1.png" class="img-fluid" alt="" style="object-fit:contain"></figure>
+            <h4 class="text-center text-dark" >TUAN HAJI ADAM BIN KELING</h4>
+				<h5 class="text-center text-dark ">Pengerusi</h5>
           </div></div>
           <div class="col-lg-8 pt-4 pt-lg-0 order-lg-2 content d-flex align-items-stretch">
             <p class="fst-italic">
@@ -95,7 +96,7 @@
     <section class="services " id="service1">
       <h2 class="text-center">Infografik</h2><br>
       <div class="container justify-content-center text-center"> 
-      <h4 class="title"><a>MODEL PELAKSANAAN CENTRAL DISRIBUTION CENTRE (CDC) DALAM SEKTOR PEMBORONGAN DAN PERUNCITAN</a></h4>
+      <h4 class="title"><a>Model Pelaksanaan Central Distribution Centre (CDC) Dalam Sektor Pemborongan Dan Peruncitan</a></h4>
 
         <div class="row">
           <div class=" col-lg-12 d-flex align-items-center justify-content-md-center" data-aos="fade-up">
@@ -178,14 +179,14 @@ $result = mysqli_query($conn,"SELECT * FROM counter");
                 <div class="col-md-6">
                   <div class="info-box bg-white">
                     <i class="bx bx-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com<br>contact@example.com</p>
+                    <h3>Emel</h3>
+                    <p>info@fedborong.com.my<br>contact@fedborong.com.my</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box bg-white">
                     <i class="bx bx-phone-call"></i>
-                    <h3>Call Us</h3>
+                    <h3>Tel</h3>
                     <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
                   </div>
                 </div>
@@ -230,7 +231,7 @@ $result = mysqli_query($conn,"SELECT * FROM counter");
 
   <?php include 'footer.php' ?>
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
         function sendEmail() {
             var name = $("#name");

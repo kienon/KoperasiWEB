@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="https://fedborong.com.my/assets/img/logo/logo1.png" rel="icon">
+  <link href="http://fedskm.ddns.net/assets/img/logo/logo1.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: Moderna - v4.10.1
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -34,6 +33,36 @@
   * License: https://bootstrapmade.com/license/
   * Redesigned: TFP Solution Sdn Bhd
   ======================================================== -->
+  <style>
+     .card{
+      border-radius: 4px;
+      height: 300px;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+  }
+  
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
+
+  
+.stuck {height: 200px;
+  width: 460px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+  </style>
+
 </head>
 
 <body>
@@ -43,13 +72,13 @@
     <div class="container d-flex justify-content-between align-items-center">
 
     <div class="logo">
-        <a href="./"><img src="https://fedborong.com.my/assets/img/logo/logo1.png" alt="" class="img-fluid"><span class="text-light">FedBorong</span></a>
+        <a href="./"><img src="http://fedskm.ddns.net/assets/img/logo/logo1.png" alt="" class="img-fluid"><span class="text-light">FedBorong</span></a>
       </div>
 
       <nav id="navbar" class="navbar">
     <ul id="menu" class="menu">
         <li class="nav-item">
-            <a href="https://fedborong.com.my/" class=" <?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
+            <a href="http://fedskm.ddns.net" class=" <?php if(basename($_SERVER['PHP_SELF'])=="http://fedskm.ddns.net"){
                 echo "active";}
                 else{
                     echo "";

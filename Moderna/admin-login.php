@@ -126,15 +126,20 @@ require './db_connect.php';
 
                 <div class="col-12">
                   <label for="yourPassword" class="form-label">Kata Laluan</label>
+					<div class="input-group">
+					<button type="button" style="background-color:#cccccc;" class="btn" onclick="myFunction()">
+						<i id="mybut" class="bi bi-eye-fill"></i></button>
                   <input type="password" name="pwd" class="form-control" id="yourPassword" required>
+				  <!--<input type="checkbox" onclick="myFunction()"> Lihat Kata Laluan-->
                   <div class="invalid-feedback">Sila masukkan kata laluan!</div>
+					</div>
                 </div>
                 
                 <div class="col-12">
                   <br><button class="btn btn-primary w-100" type="submit" name="login">Log Masuk</button>
                 </div><br>
                 <div class="col-12">
-                  <p class="small mb-0 text-center">Kembali ke <a href="index"> Laman Utama</a></p>
+                  <p class="small mb-0 text-center">Kembali ke <a href="./"> Laman Utama</a></p>
                 </div>
               </form>
 
@@ -144,6 +149,19 @@ require './db_connect.php';
       </div>
     </div>
   </section>
+	<script>
+		function myFunction() {
+      var x = document.getElementById("yourPassword");
+	  var y = document.getElementById("mybut");
+      if (x.type === "password" && y.className == "bi bi-eye-fill") {
+         x.type = "text";
+		 y.className = "bi bi-eye-slash-fill";
+      } else {
+         x.type = "password";
+		 y.className = "bi bi-eye-fill";
+      }
+    }
+	</script>
 </body>
 
 <?php include 'admin-footer.php' ?>

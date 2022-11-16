@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 09, 2022 at 05:19 PM
--- Server version: 10.5.18-MariaDB
--- PHP Version: 7.4.30
+-- Host: 127.0.0.1
+-- Generation Time: Nov 16, 2022 at 02:43 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `about` (
   `title` text NOT NULL,
   `paragraph` longtext NOT NULL,
   `image` longblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -44,7 +44,7 @@ CREATE TABLE `counter` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `count` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `counter`
@@ -54,7 +54,7 @@ INSERT INTO `counter` (`id`, `name`, `count`) VALUES
 (1, 'Pembekal', 100),
 (2, 'Kedai', 2577),
 (3, 'Unit Penyimpanan Stok', 5000),
-(4, 'DC & SUB-DC', 28);
+(4, 'DC & SUB-DC', 29);
 
 -- --------------------------------------------------------
 
@@ -64,9 +64,9 @@ INSERT INTO `counter` (`id`, `name`, `count`) VALUES
 
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
-  `file_name` varchar(255) NOT NULL,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `uploaded_on` datetime NOT NULL,
-  `status` enum('1','0') NOT NULL DEFAULT '1'
+  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -96,8 +96,21 @@ CREATE TABLE `jawatan` (
   `overview` longtext NOT NULL,
   `responsibilities` mediumtext NOT NULL,
   `requirements` mediumtext NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `date` date NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `salary` varchar(30) NOT NULL,
+  `category` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `jawatan`
+--
+
+INSERT INTO `jawatan` (`id`, `job`, `overview`, `responsibilities`, `requirements`, `date`, `location`, `salary`, `category`) VALUES
+(4, 'Sales Associate', 'Utama Jualan harian Job Requirement: Degree Holder Job Description: jual-jual bina hubungan bisnes kepada bisnes', 'jual-jual menjalin hubungan bisnes kepada bisnes, mobilityone', 'Master Degree Holder', '2022-12-22', 'Kuala Lumpur', 'RM2000 - RM3000', 1),
+(6, 'IT executive ', 'support all it related', 'responsible', 'degree with 2 years experiences', '2022-11-30', 'Kota Kinabalu - Sabah', 'RM3000 - RM5000', 2),
+(7, 'Admin executive', 'support HR department', 'responsible', 'degree with 2 years experiences', '2022-12-16', 'Shah Alam - Selangor', 'RM2000 - RM3500', 3),
+(8, 'Business Development', 'Handling Business to Business relations', 'responsible', 'degree with 2 years experiences', '2022-12-30', '', '0', 0);
 
 -- --------------------------------------------------------
 
@@ -111,7 +124,7 @@ CREATE TABLE `keahlian` (
   `Pemborong` tinyint(11) DEFAULT NULL COMMENT '1=Ya, 2= Tidak',
   `Peruncitan` tinyint(11) DEFAULT NULL COMMENT '1=Ya, 2=Tidak',
   `ModalSyer` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `keahlian`
@@ -129,7 +142,7 @@ INSERT INTO `keahlian` (`Id`, `Koperasi`, `Pemborong`, `Peruncitan`, `ModalSyer`
 (24, 'Kop. Peneroka Felda Tersang 03 Berhad', 1, 1, NULL),
 (25, 'Kop. Emas Tawau Sabah Berhad', 2, 1, NULL),
 (26, 'Kop. Permodalan Felda (M) Berhad (KPF)', 1, 1, 5000),
-(27, 'Kop. Perbadanan Putrajaya Berhad', 2, 1, 0);
+(27, 'Kop. Perbadanan Putrajaya Berhad', 2, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -140,16 +153,15 @@ INSERT INTO `keahlian` (`Id`, `Koperasi`, `Pemborong`, `Peruncitan`, `ModalSyer`
 CREATE TABLE `slides` (
   `id` int(11) NOT NULL,
   `image` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `slides`
 --
 
 INSERT INTO `slides` (`id`, `image`) VALUES
-(6, 'images/esmonde-yong--9B08uduMyY-unsplash.jpg'),
 (7, 'images/hero-bg.jpg'),
-(8, 'images/image 1.png');
+(13, 'images/image 1.png');
 
 -- --------------------------------------------------------
 
@@ -159,19 +171,23 @@ INSERT INTO `slides` (`id`, `image`) VALUES
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `email` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `email` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `password` varchar(255) CHARACTER SET latin1 NOT NULL,
   `status` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `status`) VALUES
-(3, 'admin', 'admin@fedborong.com.my', '$2y$10$RQeCniBCGrFxH3.MmI44zu6BB/ckO6l8XdfZMVUcDszOst0BAZosy', 1),
-(4, 'admin2', 'admin@fedborong.com.my', '$2y$10$90hzKmeqqnMP8UvuuLVw/eKBsSMPhobFRTUZZdfVmJtvoLl4ZoBN2', 2);
+(3, 'admin', 'admin@min.com', '$2y$10$GBoD2oKmJtGYc/HGoolt7.zynvcalGMN1ln04uyeeP/sbpBeRkmWy', 1),
+(5, 'amsari', 'sari@demo.com', '$2y$10$la4/D3omfv8MlUyVe5Way.Pd40k3mG9u99JkVgrM5bJ2sBi.pjGde', 2),
+(6, 'kienon', 'kienon@tfp.com', '$2y$10$V.J41rlrSXVjj/uERyot4Ofr0maOeKjk355.0uTkKhsDQVYWAQhpy', 1),
+(7, 'azwan', 'wan@demo.com', '$2y$10$8sHtB.jkYrd4RrKShY1xjebHQHvU5V8DrmgLd8hhdAt64jbIpy8tq', 1),
+(8, 'alya', 'alya@tfp.com', '$2y$10$BdTbxYpJCIPeMwPxhIl1tOmT3wBIS3gGwaDC96THBfBHWUAC.bxO2', 2),
+(9, 'admin2', 'admin@fedborong.com.my', '$2y$10$rfqUrWBW870DHXEzH6OGPON/zMx4K4eQE4Yu2DHoVH0RTJr5vFUdi', 2);
 
 -- --------------------------------------------------------
 
@@ -190,7 +206,7 @@ CREATE TABLE `website_setting` (
   `meta_description` text NOT NULL,
   `google_varification_code` text NOT NULL,
   `google_analytics_code` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `website_setting`
@@ -272,31 +288,31 @@ ALTER TABLE `counter`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `jawatan`
 --
 ALTER TABLE `jawatan`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `keahlian`
 --
 ALTER TABLE `keahlian`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `slides`
 --
 ALTER TABLE `slides`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `website_setting`

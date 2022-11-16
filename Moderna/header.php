@@ -11,8 +11,6 @@
 
   <!-- Favicons -->
   <link href="https://fedborong.com.my//assets/img/logo/logo1.png" rel="icon">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">  
 

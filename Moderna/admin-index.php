@@ -20,11 +20,11 @@ include 'db_connect.php';
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-8">
+        <div class="col-lg-10">
           <div class="row">
 
             <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="card-body">
@@ -47,7 +47,7 @@ include 'db_connect.php';
             <!-- End Sales Card -->
 
             <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="card-body">
@@ -70,7 +70,7 @@ include 'db_connect.php';
             <!-- End Sales Card -->
 
             <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="card-body">
@@ -93,7 +93,7 @@ include 'db_connect.php';
             <!-- End Sales Card -->
 
             <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="card-body">

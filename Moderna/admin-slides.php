@@ -10,7 +10,7 @@ include 'db_connect.php';
 
 $msg = "";
 
-if(isset($_POST[ 'upload'])){
+if(isset($_POST[ 'upload'])&& !empty($_FILES["image"]["name"])){
   $image = $_FILES['image']['name'];
   $path = 'images/'.$image;
 
@@ -23,7 +23,7 @@ if($sql){
 }
 }
 //getimagefromdatabase
-$query = $conn->query("SELECT * FROM slides");
+$query = $conn->query("SELECT * FROM slides ORDER BY `id` DESC");
 
 ?>
 <body>

@@ -18,22 +18,21 @@ require('db_connect.php');
     </div><!-- End Page Title -->
 
     <section class="section">
-      <div class="row">
-      <div class="card card-outline card-primary">
-            <div class="card-body">
-              <h5 class="card-title"></h5>
+      <div class="row ">
+      <div class="">
+            <div class=" ">
+              <h5 class=""></h5>
 
               <!-- Default Table -->
-              <table class="table tabe-hover table-bordered" id="list">
+              <table class="table table-bordered table-hover table-striped" id="list">
                 <thead>
                   <tr>
-                    <th scope="col">Bil</th>
-                    <th scope="col">Nama Koperasi</th>
-                    <th scope="col">Pemborong</th>
-                    <th scope="col">Peruncit</th>
-                    <th scope="col">ModalSyer</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Padam</th>
+                    <th scope="col-1">Bil</th>
+                    <th scope="col-3">Nama Koperasi</th>
+                    <th scope="col-1">Borong</th>
+                    <th scope="col-1">Runcit</th>
+                    <th scope="col-1">Modal</th>
+                    <th scope="col-1">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -49,7 +48,7 @@ require('db_connect.php');
                     <?php 
                     switch ($row['Pemborong']) {
                         case '1':
-                            echo "<span> <i class='bi bi-check-circle-fill'></i></span>";
+                            echo " <i class='bi bi-check-circle-fill'></i>";
                             break;
                         case '2':
                             echo "<span> </span>";
@@ -64,7 +63,7 @@ require('db_connect.php');
                 <?php 
                 switch ($row['Peruncitan']) {
                     case '1':
-                        echo "<span> <i class='bi bi-check-circle-fill'></i></span>";
+                        echo " <i class='bi bi-check-circle-fill'></i>";
                         break;
                     case '2':
                         echo "<span></span>";
@@ -76,10 +75,8 @@ require('db_connect.php');
                 ?>
                    </td>
                     <td><?php echo $row['ModalSyer'] ?></td>
-                    <td><a href="admin-member-edit?id=<?php echo $row['Id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td>
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['Id'] ?>">
-                     Padam
+                    <td><a href="admin-member-edit?id=<?php echo $row['Id'] ?>" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['Id'] ?>"><i class="bi bi-trash3-fill"></i>
                     </button>
                      <!-- Vertically centered Modal -->
                       <div class="modal fade" id="verticalycentered-<?php echo $row['Id'] ?>" tabindex="-1">

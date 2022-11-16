@@ -1,4 +1,5 @@
-  <!-- ======= Header ======= -->
+<!---fit kita hide ya few things sini-->
+<!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
   <?php 
   require('db_connect.php'); 
@@ -21,6 +22,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+			  <i class="bi bi-person-circle"></i>
             <span class="d-none d-md-block dropdown-toggle ps-2"><?php echo $admins['name'];  ?></span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -83,7 +85,7 @@
 
       <?php }?>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="admin-slides">
+        <a class="nav-link collapsed" href="#admin-slides">
           <i class="bi bi-file-slides"></i>
           <span>Gambar Latar</span>
         </a>
@@ -95,7 +97,7 @@
         </a>
         <ul id="tables-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="admin-member-add">
+            <a href="#admin-member-add">
               <i class="bi bi-circle"></i><span>Tambah Keahlian</span>
             </a>
           </li>
@@ -120,7 +122,7 @@
         </a>
         <ul id="tables-nav3" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="admin-job-add">
+            <a href="#admin-job-add">
               <i class="bi bi-circle"></i><span>Tambah Jawatan</span>
             </a>
           </li>

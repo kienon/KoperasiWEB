@@ -15,10 +15,10 @@
 
         //SMTP Settings
         $mail->isSMTP();
-        $mail->Host = "smtp-relay.sendinblue.com";
+        $mail->Host = "sp131.mschosting.cloud";
         $mail->SMTPAuth = true;
-        $mail->Username = "ahmad.amsari@tfp.com.my"; //enter you email address
-        $mail->Password = 'mdQ3RbS9kcHYqKIZ'; //enter you email password
+        $mail->Username = "amsari@fedborong.com.my"; //enter you email address
+        $mail->Password = 'xu14E62$z'; //enter you email password
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
 

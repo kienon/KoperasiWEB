@@ -30,7 +30,7 @@ require('db_connect.php');
                     <th scope="col">Bil</th>
                     <th scope="col">Nama Perkhidmatan</th>
                     <th scope="col">Jumlah</th>
-                    <th scope="col">Edit</th>
+                    <th scope="col">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -43,7 +43,7 @@ require('db_connect.php');
                     <td><?php echo $count; ?></td>
                     <td><?php echo $row['name'] ?></td>
                     <td><?php echo $row['count'] ?></td>
-                    <td><a href="admin-counter-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td><a href="admin-counter-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a></td>
                   </tr>
                   <?php $count++; } ?>
                 </tbody>

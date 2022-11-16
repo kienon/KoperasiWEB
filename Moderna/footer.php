@@ -1,43 +1,43 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="footer-top">
-      <div class="container">
+      <div class="container d-flex">
         <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 footer-info">
-        <div class="logo">
-        <a><img src="https://fedborong.com.my//assets/img/logo/logofull.png" alt="" class="img-fluid" style="width:200px; height:130px;"></a>
-      </div>
-</div>
-        <div class="col-lg-5 col-md-6 footer-info">
-            <h3>Mengenai Federasi Borong</h3>
-            <p>Federasi Koperasi Pemborongan dan Peruncitan Malaysia Berhad (FKPPMB) merupakan sebuah gabungan koperasi-koperasi di bawah Suruhanjaya Koperasi Malaysia (SKM). (FKPPMB) terlibat dalam sektor pemborongan dan peruncitan di mana Federasi ini ditubuhkan bertujuan untuk memperbaiki dan memperkukuhkan perniagaan koperasi serta meningkatkan tahap penguasaan rantaian bekalan (supply chain) koperasi bermula daripada ‘producer to end-user’. 
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <div class="col-lg-3 col-md-6 footer-info">
+            <div class="logo">
+              <a><img src="https://fedborong.com.my/assets/img/logo/logofull.png" alt="" class="img-fluid" style="width:200px; height:130px;"></a>
             </div>
-          </div> 
-        <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Capaian Pantas</h4> <!--Usefull links-->
-            <ul>
-              <li><i class="bx bx-chevron-right "></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="career">Kerjaya</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="faq">Soalan Lazim</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="admin-login">Portal Staff</a></li>
-            </ul>
           </div>
-
+          <div class="col-lg-5 col-md-6 footer-info">
+              <h3>Mengenai Federasi Borong</h3>
+              <p>Federasi Koperasi Pemborongan dan Peruncitan Malaysia Berhad (FKPPMB) merupakan sebuah gabungan koperasi-koperasi di bawah Suruhanjaya Koperasi Malaysia (SKM). (FKPPMB) terlibat dalam sektor pemborongan dan peruncitan di mana Federasi ini ditubuhkan bertujuan untuk memperbaiki dan memperkukuhkan perniagaan koperasi serta meningkatkan tahap penguasaan rantaian bekalan (supply chain) koperasi bermula daripada ‘producer to end-user’. 
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div> 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Pautan Lain</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#service">Terma Pengguna</a></li> <!--Terms of service-->
-              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#disclaimer">Penafian</a></li> <!--Disclaimer-->
-              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#security">Dasar Keselamatan</a></li> <!--Security policy-->
-              <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#privacy">Dasar Privasi</a></li> <!--Privacy policy-->            
-            </ul>
-          </div>
+              <h4>Capaian Pantas</h4> <!--Usefull links-->
+              <ul>
+                <li><i class="bx bx-chevron-right "></i> <a href="https://www.skm.gov.my/index.php/my/">SKM</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="career">Kerjaya</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="faq">Soalan Lazim</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="admin-login">Portal Staff</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Pautan Lain</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#service">Terma Pengguna</a></li> <!--Terms of service-->
+                <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#disclaimer">Penafian</a></li> <!--Disclaimer-->
+                <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#security">Dasar Keselamatan</a></li> <!--Security policy-->
+                <li><i class="bx bx-chevron-right"></i> <a href="./copyright-policy#privacy">Dasar Privasi</a></li> <!--Privacy policy-->            
+              </ul>
+            </div>
      
           <!--div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>

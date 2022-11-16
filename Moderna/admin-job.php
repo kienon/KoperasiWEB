@@ -20,7 +20,7 @@ require('db_connect.php');
     <section class="section">
       <div class="row">
       <div class="card">
-            <div class="card-body">
+            <div class="card-body table-responsive">
               <h5 class="card-title"></h5>
 
               <!-- Default Table -->
@@ -29,12 +29,11 @@ require('db_connect.php');
                   <tr>
                     <th scope="col">Bil</th>
                     <th scope="col">Jawatan</th>
-                    <th scope="col">Gambaran Keseluruhan Kerja</th>
+                    <th scope="col">Gambaran Kerja</th>
                     <th scope="col">Tanggungjawab</th>
-                    <th scope="col">Syarat Permohonan</th>
-                    <th scope="col">Tarikh Luput</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Padam</th>
+                    <th scope="col">Syarat</th>
+                    <th scope="col">Tarikh Tutup</th>
+                    <th scope="col">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -50,10 +49,9 @@ require('db_connect.php');
                     <td><?php echo $row['responsibilities'] ?></td>
                     <td><?php echo $row['requirements'] ?></td>
                     <td><?php echo $row['date'] ?></td>
-                    <td><a href="admin-job-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td>
+                    <td><a href="admin-job-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm"data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
-                     Padam
+                     <i class="bi bi-trash3-fill"></i>
                     </button>
                      <!-- Vertically centered Modal -->
                       <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">

@@ -80,7 +80,7 @@
 <?php include 'admin/admin-footer.php' ?>
 <?php 
     } else {
-        header("Location: ../Moderna/admin-login?error=login_first");
+        header("Location: ./admin-login?error=login_first");
         exit();
     }
  ?>   

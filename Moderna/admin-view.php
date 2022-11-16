@@ -20,18 +20,16 @@ require('db_connect.php');
     <section class="section">
       <div class="row">
       <div class="card">
-            <div class="card-body">
+            <div class="card-body table-responsive">
               <h5 class="card-title"></h5>
 
               <!-- Default Table -->
               <table class="table ">
                 <thead>
                   <tr>
-                    <th scope="col">Bil</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Emel</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Padam</th>
+                    <th scope="col-2">Nama</th>
+                    <th scope="col-2">Emel</th>
+                    <th scope="col-1">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -41,13 +39,11 @@ require('db_connect.php');
                   $result = mysqli_query($conn,$sel_query);
                   while($row = mysqli_fetch_assoc($result)) { ?> 
                   <tr>
-                    <td><?php echo $count; ?></td>
                     <td><?php echo $row['name'] ?></td>
                     <td><?php echo $row['email'] ?></td>
-                    <td><a href="admin-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td>
+                    <td><a href="admin-edit?id=<?php echo $row['id'] ?>" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="bi bi-pencil-square"></i></a>
                     <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#verticalycentered-<?php echo $row['id'] ?>">
-                     Padam
+                    <i class="bi bi-trash3-fill"></i>
                     </button>
                      <!-- Vertically centered Modal -->
                       <div class="modal fade" id="verticalycentered-<?php echo $row['id'] ?>" tabindex="-1">
